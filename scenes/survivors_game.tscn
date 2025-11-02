@@ -1978,7 +1978,6 @@ offset_bottom = 50884.0
 color = Color(1, 0.665829, 0.67419916, 0.27450982)
 
 [node name="NightTime" type="ColorRect" parent="Brotat"]
-visible = false
 top_level = true
 z_index = 642
 offset_left = -1052.0
@@ -1989,9 +1988,17 @@ color = Color(0.3647059, 0, 0.5254902, 0.3647059)
 
 [node name="Camera2D" type="Camera2D" parent="Brotat"]
 scale = Vector2(0.073, 0.073)
+zoom = Vector2(2, 2)
 limit_enabled = false
 position_smoothing_enabled = true
-position_smoothing_speed = 2.8
+position_smoothing_speed = 1.8
+
+[node name="Camera2D2" type="Camera2D" parent="Brotat"]
+scale = Vector2(0.073, 0.073)
+zoom = Vector2(2, 2)
+limit_enabled = false
+position_smoothing_enabled = true
+position_smoothing_speed = 90.0
 
 [node name="ProgressBar" type="ProgressBar" parent="Brotat"]
 unique_name_in_owner = true
@@ -2119,6 +2126,7 @@ wait_time = 0.3
 autostart = true
 
 [node name="Fade" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="Fade"]
 anchors_preset = 15
