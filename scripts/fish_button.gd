@@ -16,8 +16,9 @@ func _pressed() -> void:
 
 
 func _on_bubbles_finished():
+	Global.cat_dialogue_state = 2
+	
 	var level = Global.unlocked_fishing_levels
-
 	var scene_path = ""
 	match level:
 		1:

@@ -83,8 +83,8 @@ config/icon="uid://biggnkfn2sa25"
 [autoload]
 
 Global="*res://Global.gd"
-LootLockerSDK="*res://addons/LootLockerSDK/LootLockerSDK.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+LootLockerSDK="*res://addons/LootLockerSDK/LootLockerSDK.gd"
 
 [display]
 
@@ -99,7 +99,7 @@ project/assembly_name="Getting started with Godot 4"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/LootLockerSDK/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray("res://addons/LootLockerSDK/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
 
 [input]
 
@@ -158,7 +158,7 @@ dash={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://NewDialogue.dialogue", "res://untitled.dialogue", "res://dialogues/CatDialogue1.dialogue")
+locale/translations_pot_files=PackedStringArray("res://NewDialogue.dialogue", "res://untitled.dialogue", "res://dialogues/CatDialogue1.dialogue", "res://dialogues/CatDialogue2.dialogue", "res://dialogues/CatDialogue3.dialogue", "res://dialogues/CatDialogue4.dialogue", "res://dialogues/GoingToSleep1.dialogue", "res://dialogues/BlackOcean1.dialogue", "res://dialogues/BlackOceanDrank1.dialogue", "res://dialogues/BlackOceanDrank2.dialogue", "res://dialogues/BlackOceanDrank1half.dialogue", "res://dialogues/FirstBattle.dialogue")
 
 [layer_names]
 

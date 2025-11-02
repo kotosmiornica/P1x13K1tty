@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dx8chnjj6yth3"]
+[gd_scene load_steps=13 format=3 uid="uid://dx8chnjj6yth3"]
 
 [ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_pqhbs"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="2_ixsdo"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="3_www6x"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="4_lrx6q"]
+[ext_resource type="Texture2D" uid="uid://5eiwexwlw540" path="res://images/sheets/FINALlyCatIdleAnim.png" id="5_ixsdo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -64,6 +65,21 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_www6x"]
+atlas = ExtResource("5_ixsdo")
+region = Rect2(0, 18, 94, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lrx6q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_www6x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
 script = ExtResource("1_pqhbs")
@@ -84,9 +100,9 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 80.0
+offset_left = 174.0
 offset_top = 245.0
-offset_right = -80.0
+offset_right = -174.0
 offset_bottom = 408.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -101,19 +117,6 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
-
-[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
-unique_name_in_owner = true
-visible = false
-modulate = Color(1, 1, 1, 0.501961)
-layout_mode = 2
-mouse_filter = 1
-theme_override_fonts/normal_font = ExtResource("2_ixsdo")
-bbcode_enabled = true
-text = "Cat?"
-fit_content = true
-scroll_active = false
-tab_size = 5
 
 [node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("3_www6x")]
 unique_name_in_owner = true
@@ -131,9 +134,10 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 326.0
-offset_top = -102.0
-offset_right = -326.0
+offset_left = 410.0
+offset_top = -145.0
+offset_right = -410.0
+offset_bottom = -15.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 8
@@ -153,6 +157,11 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_ixsdo")
 theme_override_font_sizes/font_size = 60
 text = "woah you can talk?"
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="Balloon"]
+position = Vector2(279, 684)
+scale = Vector2(5.2797475, 5.2797475)
+sprite_frames = SubResource("SpriteFrames_lrx6q")
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

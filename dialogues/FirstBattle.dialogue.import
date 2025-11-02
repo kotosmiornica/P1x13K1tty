@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dpc82yy1nlsao"
+path="res://.godot/imported/FirstBattle.dialogue-4f7df8d8fce60be2cdbfe01c46a19313.tres"
+
+[deps]
+
+source_file="res://dialogues/FirstBattle.dialogue"
+dest_files=["res://.godot/imported/FirstBattle.dialogue-4f7df8d8fce60be2cdbfe01c46a19313.tres"]
+
+[params]
+
+defaults=true

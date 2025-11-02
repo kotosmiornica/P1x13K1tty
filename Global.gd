@@ -14,7 +14,7 @@ var equipped_hair: String = ""
 var equipped_accessory: String = ""
 var score: int = 0
 var waves_survived: int = 0
-
+var cat_dialogue_state: = 1
 var unlocked_fishing_levels := 1
 var bleach_level: int = 1
 var active_buffs = {}

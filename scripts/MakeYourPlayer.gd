@@ -9,14 +9,20 @@ extends CharacterBody2D
 
 func _ready() -> void:
 	set_process_input(true)
-	var custom_baloon = preload("res://ui/FirstCatBaloon.tscn")
 	await get_tree().create_timer(0.5).timeout
+
+	if Global.cat_dialogue_state == 1:
+		dialogue_resource = preload("res://dialogues/CatDialogue1.dialogue")
+	else:
+		dialogue_resource = preload("res://dialogues/CatDialogue2.dialogue")
+
 	if dialogue_resource:
 		DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
 	else:
 		push_warning("No dialogue resource assigned to cat!")
-	
+
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
+
 
 
 func _on_dialogue_ended(resource: DialogueResource) -> void:

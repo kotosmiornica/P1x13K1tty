@@ -1,22 +1,20 @@
 ~ start
-Cat?: [speed=0.5]woah a human
-
+Cat?: [speed=0.2]oh no, what have I done
+Leek: hey there big guy
+Cat?: I'm fat now! my life is over!
+Cat?: People will stop playing the game if I look  like this!
+Cat?: ERRRRGGHHHH
+Leek: WHAT ARE YOU DOING
+Cat?: I HAVE TO SQUEEZE THE FAT OUT!! I WILL NOT BE FAT!
+Leek: what do you mean squeeze it out? where will it go?
+Cat?: not my problem. anywhere but here.
+Cat?: I need to stay cute for the players!
+Cat?: 
 - I'm not a human!
 	Cat?: don't lie to me
 	Cat?: I know what a human is
 	- ok fine I'm human
 		Cat?: that's right
-		Cat?: anyways I was about to go fishing
-		Cat?: till you interrupted me
-		- fishing sounds dumb
-			Cat?: you sound dumb
-			Cat?: anyways tap the ocean to throw the hook
-			Cat?: it's too heavy for me to throw it myself
-			=> fishing_convo
-		- I wanna go fishing too!
-			Cat?: yay, we can fish together!
-			Cat?: tap the ocean to throw the hook
-			=> fishing_convo2
 	- I'm a cat. meow
 		Cat?: you're actually a liar
 		Cat?: anyways I was about to go fishing
@@ -26,10 +24,6 @@ Cat?: [speed=0.5]woah a human
 			Cat?: anyways tap the ocean to throw the hook
 			Cat?: it's too heavy for me to throw it myself
 			=> fishing_convo
-		- I wanna go fishing too!
-			Cat?: yay, we can fish together!
-			Cat?: tap the ocean to throw the hook
-			=> fishing_convo2
 
 - woah you can talk?
 	Cat?: of course I can talk! you think I'm stupid?

@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://da5csliysvjgr" path="res://scripts/PlayButton.gd" id="2_5yleq"]
 [ext_resource type="Texture2D" uid="uid://wtqx4tx4gm6y" path="res://images/sheets/emomikuhair.png" id="3_760fv"]
 [ext_resource type="PackedScene" uid="uid://58ityb3umon8" path="res://scenes/Shopp.tscn" id="3_pp5m5"]
-[ext_resource type="Texture2D" uid="uid://dv6si3qh0nol5" path="res://images/kraken_14724220.png" id="3_yt8fu"]
 [ext_resource type="Resource" uid="uid://2v8kndq3bhcy" path="res://dialogues/CatDialogue1.dialogue" id="4_5fdov"]
 [ext_resource type="Texture2D" uid="uid://btlwbyjjf7a0l" path="res://images/sheets/MIKUMIKU.png" id="4_rtd1e"]
 [ext_resource type="PackedScene" uid="uid://bkqp1n5b6xmb2" path="res://scenes/Volume.tscn" id="5_760fv"]
@@ -31,6 +30,7 @@
 [ext_resource type="Script" uid="uid://hvak8g7kn2xr" path="res://scripts/settings.gd" id="23_8fhjo"]
 [ext_resource type="Texture2D" uid="uid://bjiaqbuwy0wx1" path="res://images/settingsimage.png" id="23_yvxia"]
 [ext_resource type="Texture2D" uid="uid://brts17jeddvu4" path="res://free-underwater-world-pixel-art-backgrounds/background 4/4.png" id="29_r54wa"]
+[ext_resource type="Texture2D" uid="uid://gfuphujdhgtd" path="res://images/Leek.png" id="30_5fdov"]
 [ext_resource type="Texture2D" uid="uid://cdx13jajsldf8" path="res://images/free-fishing-game-assets-pixel-art-pack/4 Icons/Icons_20.png" id="31_m74h7"]
 [ext_resource type="Texture2D" uid="uid://docbnxwnj2qle" path="res://images/free-fishing-game-assets-pixel-art-pack/3 Objects/Fishing_hut.png" id="32_m74h7"]
 [ext_resource type="PackedScene" uid="uid://yol17uvac0dx" path="res://scenes/Wardrobe.tscn" id="33_gut0v"]
@@ -1834,12 +1834,11 @@ autoplay = true
 bus = &"Music"
 
 [node name="EatingPet" type="Sprite2D" parent="."]
-modulate = Color(0.81075084, 0.9999998, 0.99649805, 1)
-self_modulate = Color(1, 1, 0, 1)
+visible = false
 top_level = true
 position = Vector2(1799, 826)
 scale = Vector2(2.4631162, 2.6061652)
-texture = ExtResource("3_yt8fu")
+texture = ExtResource("30_5fdov")
 script = ExtResource("18_5p0sf")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="EatingPet"]

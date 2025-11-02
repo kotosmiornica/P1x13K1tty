@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://hs6ems62t5b8"
+path="res://.godot/imported/BlackOcean1.dialogue-7d5df463c83ea5d108ec26d3ec354514.tres"
+
+[deps]
+
+source_file="res://dialogues/BlackOcean1.dialogue"
+dest_files=["res://.godot/imported/BlackOcean1.dialogue-7d5df463c83ea5d108ec26d3ec354514.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bkgjir7r3rltd"
+path="res://.godot/imported/BlackOceanDrank1half.dialogue-bf855ca39f97842ab8d6fb4aae5596ea.tres"
+
+[deps]
+
+source_file="res://dialogues/BlackOceanDrank1half.dialogue"
+dest_files=["res://.godot/imported/BlackOceanDrank1half.dialogue-bf855ca39f97842ab8d6fb4aae5596ea.tres"]
+
+[params]
+
+defaults=true

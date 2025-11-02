@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://utp80p3awc8b"
+path="res://.godot/imported/BlackOceanDrank2.dialogue-c722326a43c24c49bda933d1b90da584.tres"
+
+[deps]
+
+source_file="res://dialogues/BlackOceanDrank2.dialogue"
+dest_files=["res://.godot/imported/BlackOceanDrank2.dialogue-c722326a43c24c49bda933d1b90da584.tres"]
+
+[params]
+
+defaults=true

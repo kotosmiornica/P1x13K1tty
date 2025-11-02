@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dwyb8bth6wc18"
+path="res://.godot/imported/GoingToSleep1.dialogue-85e6d059d11dd518ebb7970313facb23.tres"
+
+[deps]
+
+source_file="res://dialogues/GoingToSleep1.dialogue"
+dest_files=["res://.godot/imported/GoingToSleep1.dialogue-85e6d059d11dd518ebb7970313facb23.tres"]
+
+[params]
+
+defaults=true
