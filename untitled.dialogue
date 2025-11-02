@@ -1,0 +1,12 @@
+Cat?: whoa a human
+~ start
+Cat?: [[Hi|Hello|Howdy]], this is some dialogue.
+Cat?: [speed=0.2]woah a human
+- im not a human!
+	Cat?: sure and im not a cat
+- woah you can talk?
+	Cat?: no shit dumbass
+- Start again => start
+- End the conversation => END
+Cat?: For more information see the online documentation.
+=> END

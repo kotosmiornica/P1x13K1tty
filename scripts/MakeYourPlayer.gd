@@ -9,7 +9,8 @@ extends CharacterBody2D
 
 func _ready() -> void:
 	set_process_input(true)
-	
+	var custom_baloon = preload("res://ui/FirstCatBaloon.tscn")
+	await get_tree().create_timer(0.5).timeout
 	if dialogue_resource:
 		DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
 	else:
