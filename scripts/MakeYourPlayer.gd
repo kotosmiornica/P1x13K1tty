@@ -10,18 +10,23 @@ extends CharacterBody2D
 func _ready() -> void:
 	set_process_input(true)
 	await get_tree().create_timer(0.5).timeout
-
-	if Global.cat_dialogue_state == 1:
+	
+	if Global.cat_dialogue_state == 1 and not Global.cat_intro_played:
 		dialogue_resource = preload("res://dialogues/CatDialogue1.dialogue")
-	else:
+		Global.cat_intro_played = true
+	
+	elif Global.cat_dialogue_state == 2 and not Global.cat_fishing_played:
 		dialogue_resource = preload("res://dialogues/CatDialogue2.dialogue")
-
+		Global.cat_fishing_played = true
+		
+	else:
+		return
+	
 	if dialogue_resource:
 		DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
-	else:
-		push_warning("No dialogue resource assigned to cat!")
+		DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
+	
 
-	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
 
 

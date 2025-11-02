@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbo0bd7qla4yd"]
+[gd_scene load_steps=10 format=3 uid="uid://cbo0bd7qla4yd"]
 
 [ext_resource type="Texture2D" uid="uid://dxjcywb4hgl76" path="res://free-underwater-world-pixel-art-backgrounds/background 1/1.png" id="1_o24hs"]
 [ext_resource type="Script" uid="uid://catu5hvsoll6o" path="res://scripts/fishin.gd" id="1_wacnr"]
@@ -10,6 +10,10 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2kclr"]
 radius = 33.460815
 height = 79.08911
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2kclr"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pqhp0"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -24,9 +28,9 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -17.0
+offset_left = -472.0
 offset_top = 18.0
-offset_right = 47.0
+offset_right = 502.0
 offset_bottom = 22.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -37,9 +41,24 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -9.0
-offset_right = 35.0
-offset_bottom = -356.0
+offset_left = -484.0
+offset_top = -66.0
+offset_right = 510.0
+offset_bottom = -250.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_o24hs")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -477.0
+offset_top = 49.0
+offset_right = 507.0
+offset_bottom = 1354.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_o24hs")
@@ -51,14 +70,20 @@ script = ExtResource("1_wacnr")
 modulate = Color(0, 0, 0, 0.17254902)
 self_modulate = Color(0.5370113, 0.5370113, 0.5370113, 0.827451)
 show_behind_parent = true
-position = Vector2(952, 662)
+position = Vector2(468, 917)
 scale = Vector2(3.2309763, 3.1563573)
 texture = ExtResource("7_pqhp0")
 
 [node name="Hook" type="Area2D" parent="FishingGame"]
-top_level = true
 position = Vector2(953, 982)
 scale = Vector2(0.20142613, 0.23636578)
+
+[node name="Camera2D" type="Camera2D" parent="FishingGame/Hook"]
+position = Vector2(193.61923, -253.8435)
+scale = Vector2(4.964598, 4.23073)
+limit_enabled = false
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0
 
 [node name="Sprite2D" type="Sprite2D" parent="FishingGame/Hook"]
 position = Vector2(9.929192, -3794.9656)
@@ -126,7 +151,34 @@ offset_bottom = 23.0
 stream = ExtResource("6_pqhp0")
 bus = &"Sfx"
 
+[node name="3" type="Sprite2D" parent="FishingGame"]
+modulate = Color(0, 0, 0, 0.17254902)
+self_modulate = Color(0.5370113, 0.5370113, 0.5370113, 0.827451)
+show_behind_parent = true
+position = Vector2(1454, 1807)
+scale = Vector2(3.2309763, 3.1563573)
+texture = ExtResource("7_pqhp0")
+flip_h = true
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_2kclr")
 autoplay = true
 bus = &"Music"
+
+[node name="left_wall" type="StaticBody2D" parent="."]
+position = Vector2(-114, 867)
+disable_mode = 1
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="left_wall"]
+position = Vector2(228, -21)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_2kclr")
+
+[node name="right_wall" type="StaticBody2D" parent="."]
+position = Vector2(2117, 791)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right_wall"]
+position = Vector2(-56, 17)
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_pqhp0")
