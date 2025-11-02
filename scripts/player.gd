@@ -94,9 +94,8 @@ func apply_equipped_accessories():
 			$HappyBoo.add_child(acc_node)
 
 	if acc_node:
-		acc_node.position = Vector2.ZERO
 		acc_node.visible = true
-		acc_node.z_index = 11
+
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")

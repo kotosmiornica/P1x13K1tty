@@ -4,10 +4,23 @@ extends CharacterBody2D
 @onready var meow_player = $MeowPlayer
 @onready var wig_node = $BlueWig
 @onready var heart_node = $Heart
+@export var dialogue_resource: DialogueResource
+
 
 func _ready() -> void:
 	set_process_input(true)
+	
+	if dialogue_resource:
+		DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
+	else:
+		push_warning("No dialogue resource assigned to cat!")
+	
+	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
+
+func _on_dialogue_ended(resource: DialogueResource) -> void:
+	print("Cat finished talking:", resource)
+	play_meow()
 
 
 func _is_point_over_sprite(sprite, global_point: Vector2) -> bool:

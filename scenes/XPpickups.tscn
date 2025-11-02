@@ -8,7 +8,6 @@ radius = 42.0119
 
 [node name="XPpickups" type="Area2D"]
 z_index = 15
-y_sort_enabled = true
 script = ExtResource("1_ypdhd")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

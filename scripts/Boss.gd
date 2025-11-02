@@ -29,7 +29,7 @@ func _physics_process(_delta: float) -> void:
 		var direction = (dash_target - global_position).normalized()
 		velocity = direction * dash_speed
 		move_and_slide()
-		if global_position.distance_to(dash_target) < 5.0:
+		if global_position.distance_to(dash_target) < 200.0:
 			is_dashing = false
 	else:
 		var distance = global_position.distance_to(player.global_position)

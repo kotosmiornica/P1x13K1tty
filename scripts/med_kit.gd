@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var heal_amount: int = 50
+@export var heal_amount: int = 55
 
 func _ready() -> void:
 	connect("body_entered", Callable(self, "_on_body_entered"))

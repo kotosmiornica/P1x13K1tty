@@ -1,11 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://ogik4s70pgwl"]
+[gd_scene load_steps=13 format=3 uid="uid://ogik4s70pgwl"]
 
-[ext_resource type="Texture2D" uid="uid://dvgfmy6vtvjji" path="res://characters/slime/slime_body.png" id="1_3j35h"]
 [ext_resource type="Script" uid="uid://4ykjhc3fqg8i" path="res://characters/slime/slime.gd" id="1_87y5x"]
-[ext_resource type="Texture2D" uid="uid://b7rhtttevhxtj" path="res://characters/ground_shadow.png" id="1_cq7ej"]
+[ext_resource type="Texture2D" uid="uid://hrb0m3rujjwe" path="res://images/pixelated_slime/pixelatedgrounddd2.png" id="2_pyxg0"]
 [ext_resource type="Texture2D" uid="uid://c078jrp2yvc4s" path="res://characters/slime/slime_face.png" id="2_ygydt"]
-[ext_resource type="Texture2D" uid="uid://btbxea1f3vwot" path="res://characters/slime/slime_body_hurt.png" id="4_0qu0c"]
-[ext_resource type="Texture2D" uid="uid://cai2ijnbypqtr" path="res://characters/slime/slime_hurt_eyes.png" id="4_hi70h"]
+[ext_resource type="Texture2D" uid="uid://d0hfbxkaw44mi" path="res://images/pixelated_slime/greenpixelated_slime.png" id="3_pyxg0"]
+[ext_resource type="Texture2D" uid="uid://bh7m7yq7hbp8r" path="res://images/pixelated_slime/orangepixelated_slime.png" id="4_748pi"]
+[ext_resource type="Texture2D" uid="uid://bd680det3wr4v" path="res://images/pixelated_slime/madpixelated_face.png" id="6_pyxg0"]
+[ext_resource type="Texture2D" uid="uid://d0kijkrrgdr1j" path="res://images/pixelated_slime/greenpixelated_face.png" id="7_pyxg0"]
 
 [sub_resource type="Animation" id="Animation_y4lve"]
 length = 0.001
@@ -52,10 +53,10 @@ tracks/3/path = NodePath("Anchor/Face/SlimeFace:texture")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.001),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("2_ygydt")]
+"values": [ExtResource("2_ygydt"), ExtResource("7_pyxg0")]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -95,7 +96,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [ExtResource("4_hi70h"), ExtResource("2_ygydt")]
+"values": [ExtResource("6_pyxg0"), ExtResource("6_pyxg0")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -238,6 +239,30 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(0, 24.000002)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Anchor/Face/SlimeFace:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_pyxg0")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Anchor/SlimeBody:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_pyxg0")]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_j6cum"]
 _data = {
@@ -257,20 +282,20 @@ z_index = 2
 z_as_relative = false
 position = Vector2(0, 16.488619)
 scale = Vector2(0.8650755, 0.65000004)
-texture = ExtResource("1_cq7ej")
+texture = ExtResource("2_pyxg0")
 
 [node name="Anchor" type="Marker2D" parent="."]
 
 [node name="SlimeBody" type="Sprite2D" parent="Anchor"]
 z_index = 2
 position = Vector2(0, 20)
-texture = ExtResource("1_3j35h")
+texture = ExtResource("3_pyxg0")
 offset = Vector2(0, -36)
 
 [node name="SlimeBodyHurt" type="Sprite2D" parent="Anchor/SlimeBody"]
 modulate = Color(0.9443645, 0.7609742, 0.7678369, 0)
 z_index = 2
-texture = ExtResource("4_0qu0c")
+texture = ExtResource("4_748pi")
 offset = Vector2(0, -36)
 
 [node name="Face" type="Marker2D" parent="Anchor"]
@@ -280,10 +305,10 @@ position = Vector2(0, -25)
 [node name="SlimeFace" type="Sprite2D" parent="Anchor/Face"]
 z_index = 2
 position = Vector2(0, 27.99203)
-scale = Vector2(0.9285716, 0.92857134)
+scale = Vector2(0.89834756, 1.1919918)
 texture = ExtResource("2_ygydt")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="Slime" type="AnimationPlayer" parent="."]
 unique_name_in_owner = true
 libraries = {
 &"": SubResource("AnimationLibrary_j6cum")

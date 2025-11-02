@@ -1,4 +1,4 @@
-[gd_scene load_steps=168 format=3 uid="uid://cqcwtk4w1gpdv"]
+[gd_scene load_steps=169 format=3 uid="uid://cqcwtk4w1gpdv"]
 
 [ext_resource type="Script" uid="uid://d1wrmtooq2n67" path="res://scripts/menu.gd" id="1_jmdev"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="1_o0tnf"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://wtqx4tx4gm6y" path="res://images/sheets/emomikuhair.png" id="3_760fv"]
 [ext_resource type="PackedScene" uid="uid://58ityb3umon8" path="res://scenes/Shopp.tscn" id="3_pp5m5"]
 [ext_resource type="Texture2D" uid="uid://dv6si3qh0nol5" path="res://images/kraken_14724220.png" id="3_yt8fu"]
+[ext_resource type="Resource" uid="uid://2v8kndq3bhcy" path="res://dialogues/CatDialogue1.dialogue" id="4_5fdov"]
 [ext_resource type="Texture2D" uid="uid://btlwbyjjf7a0l" path="res://images/sheets/MIKUMIKU.png" id="4_rtd1e"]
 [ext_resource type="PackedScene" uid="uid://bkqp1n5b6xmb2" path="res://scenes/Volume.tscn" id="5_760fv"]
 [ext_resource type="Script" uid="uid://ca282vhax10g3" path="res://scripts/ShopButton.gd" id="6_4umqm"]
@@ -1382,6 +1383,7 @@ autoplay = "waterr"
 unique_name_in_owner = true
 position = Vector2(699, 770.00006)
 scale = Vector2(0.6905899, 0.6905899)
+dialogue_resource = ExtResource("4_5fdov")
 
 [node name="BlueWig" type="AnimatedSprite2D" parent="MakeYourPlayer"]
 visible = false
@@ -1643,6 +1645,7 @@ script = ExtResource("6_yt8fu")
 [node name="Fading" type="ColorRect" parent="FishButton"]
 visible = false
 top_level = true
+z_index = 710
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

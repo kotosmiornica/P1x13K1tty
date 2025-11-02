@@ -1,10 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://crga2m8pafqkf"]
+[gd_scene load_steps=3 format=3 uid="uid://crga2m8pafqkf"]
 
 [ext_resource type="Texture2D" uid="uid://kc5ltioajpbp" path="res://images/MonsterEnergyDrink.png" id="1_vxdkk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vxdkk"]
+radius = 29.0
+height = 106.0
 
 [node name="PoweruUPMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 texture = ExtResource("1_vxdkk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, -5)
+shape = SubResource("CapsuleShape2D_vxdkk")

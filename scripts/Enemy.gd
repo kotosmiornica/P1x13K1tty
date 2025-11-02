@@ -18,8 +18,8 @@ const MEDKIT_SCENE = preload("res://scenes/MedKit.tscn")
 const SMOKE_SCENE = preload("res://smoke_explosion/smoke_explosion.tscn")
 
 func _ready() -> void:
-	%Slime.play_walk()
 	add_to_group("enemies")
+	%Slime.play_walk()
 	if has_node("KillZone"):
 		var kill_zone = $KillZone
 		kill_zone.connect("body_entered", Callable(self, "_on_KillZone_body_entered"))

@@ -27,6 +27,7 @@ script = ExtResource("1_bsing")
 unique_name_in_owner = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 z_index = 45
 position = Vector2(0, -9.702139)
 shape = SubResource("CircleShape2D_bsing")
@@ -35,8 +36,8 @@ shape = SubResource("CircleShape2D_bsing")
 script = ExtResource("3_d4cuo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
-position = Vector2(1.4901158e-08, -8)
-rotation = 1.6126145
+position = Vector2(2.6492497e-10, -8.489373)
+rotation = 1.5839547
 scale = Vector2(4.25023, 4.25023)
 shape = SubResource("CapsuleShape2D_d4cuo")
 
