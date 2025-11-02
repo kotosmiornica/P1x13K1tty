@@ -84,7 +84,6 @@ config/icon="uid://biggnkfn2sa25"
 
 Global="*res://Global.gd"
 LootLockerSDK="*res://addons/LootLockerSDK/LootLockerSDK.gd"
-DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 [display]
 
@@ -99,7 +98,7 @@ project/assembly_name="Getting started with Godot 4"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/LootLockerSDK/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray("res://addons/LootLockerSDK/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
 
 [input]
 

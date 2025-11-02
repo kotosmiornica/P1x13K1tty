@@ -1969,6 +1969,7 @@ position = Vector2(936, 511)
 scale = Vector2(0.7137377, 0.7137377)
 
 [node name="DayTime" type="ColorRect" parent="Brotat"]
+visible = false
 top_level = true
 z_index = 32
 offset_left = -1052.0
@@ -1991,14 +1992,14 @@ scale = Vector2(0.073, 0.073)
 zoom = Vector2(2, 2)
 limit_enabled = false
 position_smoothing_enabled = true
-position_smoothing_speed = 1.8
+position_smoothing_speed = 2.0
 
 [node name="Camera2D2" type="Camera2D" parent="Brotat"]
 scale = Vector2(0.073, 0.073)
 zoom = Vector2(2, 2)
 limit_enabled = false
 position_smoothing_enabled = true
-position_smoothing_speed = 90.0
+position_smoothing_speed = 2.2
 
 [node name="ProgressBar" type="ProgressBar" parent="Brotat"]
 unique_name_in_owner = true
@@ -2126,7 +2127,6 @@ wait_time = 0.3
 autostart = true
 
 [node name="Fade" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="Fade"]
 anchors_preset = 15

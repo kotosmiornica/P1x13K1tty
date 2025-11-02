@@ -2,7 +2,7 @@ extends Area2D
 
 @export var hit_sound: AudioStream
 var travelled_distance := 0.0
-const SPEED := 1800.0
+const SPEED := 1700.0
 const RANGE := 1100.0
 
 func _physics_process(delta: float) -> void:
@@ -18,7 +18,7 @@ func _physics_process(delta: float) -> void:
 
 func _on_body_entered(body: Node) -> void:
 	if body and body.has_method("take_damage"):
-		var base_damage := 2
+		var base_damage := 4
 		var dmg_multiplier := Global.get_buff_multiplier("damage")
 		body.take_damage(base_damage * dmg_multiplier)
 
