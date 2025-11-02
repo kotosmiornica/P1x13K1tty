@@ -15,7 +15,7 @@
 [ext_resource type="StyleBox" uid="uid://djhk2ieukha32" path="res://scenes/purchasedshop.tres" id="12_hcwdo"]
 [ext_resource type="AudioStream" uid="uid://c6op7wtebnfrw" path="res://SOUNDS/sounds/cash-register-purchase-87313.mp3" id="12_xsnv8"]
 [ext_resource type="AudioStream" uid="uid://c5mhvf1525jn4" path="res://SOUNDS/sounds/wrong-47985.mp3" id="13_cn3sd"]
-[ext_resource type="Script" uid="uid://cvkm661xrtjpu" path="res://scenes/buy.gd" id="13_hcwdo"]
+[ext_resource type="Script" uid="uid://cvkm661xrtjpu" path="res://scripts/buy.gd" id="13_hcwdo"]
 
 [sub_resource type="Animation" id="Animation_auux5"]
 length = 0.001

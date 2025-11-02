@@ -1,4 +1,4 @@
-[gd_scene load_steps=163 format=3 uid="uid://yol17uvac0dx"]
+[gd_scene load_steps=164 format=3 uid="uid://yol17uvac0dx"]
 
 [ext_resource type="Script" uid="uid://bwlrd8flpldv8" path="res://scripts/wardrobe.gd" id="1_82s2s"]
 [ext_resource type="Texture2D" uid="uid://5eiwexwlw540" path="res://images/sheets/FINALlyCatIdleAnim.png" id="2_jv5sr"]
@@ -14,7 +14,7 @@
 [ext_resource type="StyleBox" uid="uid://dtnyfsfgiwow0" path="res://scenes/fonts/hoverrightshop.tres" id="10_mgkt5"]
 [ext_resource type="Script" uid="uid://dktoxo7y7qynr" path="res://scripts/next.gd" id="11_f2f1e"]
 [ext_resource type="AudioStream" uid="uid://cn254y6phru30" path="res://SOUNDS/sounds/plop.wav" id="11_ushf6"]
-[ext_resource type="Script" uid="uid://cvkm661xrtjpu" path="res://scenes/buy.gd" id="12_k25x8"]
+[ext_resource type="Script" uid="uid://cvkm661xrtjpu" path="res://scripts/buy.gd" id="12_k25x8"]
 [ext_resource type="Script" uid="uid://dnf2d832xwwjo" path="res://scripts/close.gd" id="17_6v2e3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s40fd"]
@@ -1100,33 +1100,6 @@ shadow_color = Color(0, 0, 0, 0.8117647)
 shadow_size = 10
 shadow_offset = Vector2(0, 8)
 
-[sub_resource type="Animation" id="Animation_g78dv"]
-resource_name = "fadein"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Panel:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(167, -1046), Vector2(167, 61)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Control:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, -1107), Vector2(0, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_d5b0y"]
 length = 0.001
 tracks/0/type = "value"
@@ -1152,6 +1125,33 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, -1107)]
+}
+
+[sub_resource type="Animation" id="Animation_g78dv"]
+resource_name = "fadein"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(167, -1046), Vector2(167, 61)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -1107), Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_jv5sr"]
@@ -1181,11 +1181,39 @@ tracks/1/keys = {
 "values": [Vector2(0, 0), Vector2(0, 1153)]
 }
 
+[sub_resource type="Animation" id="Animation_qtexn"]
+resource_name = "stop"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(167, -1046), Vector2(167, -1046)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -1107), Vector2(0, -1107)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qtexn"]
 _data = {
 &"RESET": SubResource("Animation_d5b0y"),
 &"fadein": SubResource("Animation_g78dv"),
-&"fadeout": SubResource("Animation_jv5sr")
+&"fadeout": SubResource("Animation_jv5sr"),
+&"stop": SubResource("Animation_qtexn")
 }
 
 [node name="Wardrobe" type="CanvasLayer"]
@@ -1388,6 +1416,7 @@ bus = &"Sfx"
 libraries = {
 &"": SubResource("AnimationLibrary_qtexn")
 }
+autoplay = "stop"
 
 [connection signal="pressed" from="Control/Prev" to="." method="_on_prev_pressed"]
 [connection signal="pressed" from="Control/Next" to="." method="_on_next_pressed"]

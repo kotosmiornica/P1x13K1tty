@@ -38,7 +38,7 @@ var items = [
 	{
 		"Name": "EmotionalWig",
 		"Des": "Such deeply EMOtional hairstyle (wip).",
-		"Cost": 10,
+		"Cost": 25,
 		"Currency": "BlackMonster"
 	}
 ]

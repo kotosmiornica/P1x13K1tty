@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://djprrgdvplv2p"]
 
-[ext_resource type="Script" uid="uid://b82syicfo45nh" path="res://scenes/leaderboard_test.gd" id="1_6jav6"]
+[ext_resource type="Script" uid="uid://b82syicfo45nh" path="res://scripts/leaderboard_test.gd" id="1_6jav6"]
 [ext_resource type="FontFile" uid="uid://b8ok8fndx02wu" path="res://Pansy Hand/pansyhand.ttf" id="1_qhqi0"]
 
 [node name="Control" type="Control"]

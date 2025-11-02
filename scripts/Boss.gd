@@ -78,4 +78,4 @@ func drop_powerup() -> void:
 	powerup.global_position = global_position
 	var root = get_tree().current_scene
 	root.call_deferred("add_child", powerup)
-	powerup.connect("collected", root.get_node("Brotat")._on_xp_collected)
+#	powerup.connect("collected", root.get_node("Brotat")._on_xp_collected)

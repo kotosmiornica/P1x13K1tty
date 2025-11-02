@@ -50,6 +50,8 @@ func start_next_wave() -> void:
 	wave_active = true
 
 	if current_wave % 5 == 0:
+		$Music.stop()
+		$BossMusic.play()
 		_spawn_boss()
 	else:
 		if boss_alive:
@@ -69,9 +71,7 @@ func _spawn_boss() -> void:
 	boss_count += 1
 	boss_alive = true
 
-	if $Music.playing:
-		$Music.stop()
-	$BossMusic.play()
+
 
 	boss.connect("died", Callable(self, "_on_boss_died"))
 
@@ -88,16 +88,18 @@ func _spawn_wave(enemy_count: int):
 
 	if enemy_count % 2 != 0:
 		_spawn_mob($Brotat/Path2DSecond/PathFollor2DSecond)
-		
+
 func _spawn_mob(path: PathFollow2D):
 	var new_mob = MobScene.instantiate()
 	path.progress_ratio = randf()
 	new_mob.global_position = path.global_position
-	add_child(new_mob)
+	call_deferred("add_child", new_mob)
 	alive_enemies += 1
 	new_mob.connect("died", Callable(self, "_on_enemy_died").bind(new_mob))
+
+
 	
-func _on_enemy_died(mob: Node):
+func _on_enemy_died(mob: Node) -> void:
 	alive_enemies -= 1
 	kill_count += 1
 	Global.score = kill_count
@@ -105,9 +107,13 @@ func _on_enemy_died(mob: Node):
 
 	if kill_count % kills_for_medkit == 0:
 		spawn_medkit(mob.global_position)
-	if $BossMusic.playing:
+
+	if boss_alive == false and $BossMusic.playing:
 		$BossMusic.stop()
 		$Music.play()
+
+	if alive_enemies == 0 and boss_alive == false:
+		start_next_wave()
 
 func update_score_display():
 	player_score = kill_count * 50

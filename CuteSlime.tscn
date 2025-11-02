@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://dvhvdoroj2mu3"]
 
-[ext_resource type="Script" uid="uid://bgdbrtai4g7lr" path="res://cute_slime.gd" id="1_xy4hn"]
-[ext_resource type="Script" uid="uid://jnhs83704ana" path="res://scenes/kill_zone.gd" id="2_6kmse"]
+[ext_resource type="Script" uid="uid://bgdbrtai4g7lr" path="res://scripts/cute_slime.gd" id="1_xy4hn"]
+[ext_resource type="Script" uid="uid://jnhs83704ana" path="res://scripts/kill_zone.gd" id="2_6kmse"]
 [ext_resource type="Texture2D" uid="uid://dlvq1pb2ovrmj" path="res://images/sheets/momo_idle_shadow.png" id="2_cgmw8"]
 [ext_resource type="AudioStream" uid="uid://6oainuiljw2o" path="res://SOUNDS/sounds/slime-squish-5-218569.mp3" id="3_cgmw8"]
 

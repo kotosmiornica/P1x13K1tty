@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://biyv6bkx73783"]
 
 [ext_resource type="StyleBox" uid="uid://diaewu28mnlyu" path="res://scenes/fonts/pressedbasicblu.tres" id="1_3vdsa"]
-[ext_resource type="Script" uid="uid://b0eo2s1lphukh" path="res://scenes/UpgradeMenu.gd" id="1_8fj4e"]
+[ext_resource type="Script" uid="uid://b0eo2s1lphukh" path="res://scripts/UpgradeMenu.gd" id="1_8fj4e"]
 [ext_resource type="StyleBox" uid="uid://cldy7x0vrp0c" path="res://scenes/buttonupgradecharacter.tres" id="1_uab3i"]
 [ext_resource type="StyleBox" uid="uid://ctnedtyf78d1o" path="res://scenes/fonts/basicblu.tres" id="2_epbnv"]
 [ext_resource type="Script" uid="uid://dh3omuiod7mt8" path="res://scripts/pizzacutter_2.gd" id="3_ix55p"]
