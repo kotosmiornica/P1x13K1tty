@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://dx8chnjj6yth3"]
+[gd_scene load_steps=16 format=3 uid="uid://dx8chnjj6yth3"]
 
 [ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_pqhbs"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="2_ixsdo"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="3_www6x"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="4_lrx6q"]
 [ext_resource type="Texture2D" uid="uid://5eiwexwlw540" path="res://images/sheets/FINALlyCatIdleAnim.png" id="5_ixsdo"]
+[ext_resource type="Texture2D" uid="uid://gfuphujdhgtd" path="res://images/Leek.png" id="6_www6x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -76,7 +77,22 @@ animations = [{
 "texture": SubResource("AtlasTexture_www6x")
 }],
 "loop": true,
-"name": &"default",
+"name": &"cathead",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fyr1b"]
+atlas = ExtResource("6_www6x")
+region = Rect2(0, 0, 76, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uqg0g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fyr1b")
+}],
+"loop": true,
+"name": &"leek",
 "speed": 5.0
 }]
 
@@ -158,10 +174,22 @@ theme_override_fonts/font = ExtResource("2_ixsdo")
 theme_override_font_sizes/font_size = 60
 text = "woah you can talk?"
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="Balloon"]
-position = Vector2(279, 684)
-scale = Vector2(5.2797475, 5.2797475)
+[node name="CatHead" type="AnimatedSprite2D" parent="Balloon"]
+top_level = true
+z_index = 530
+position = Vector2(259, 663)
+scale = Vector2(5.8198934, 6.3479247)
 sprite_frames = SubResource("SpriteFrames_lrx6q")
+animation = &"cathead"
+autoplay = "cathead"
+
+[node name="LeekHead" type="AnimatedSprite2D" parent="Balloon"]
+z_index = 655
+position = Vector2(1591, 621.0001)
+rotation = 0.61768454
+scale = Vector2(4.4653583, 4.44707)
+sprite_frames = SubResource("SpriteFrames_uqg0g")
+animation = &"leek"
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

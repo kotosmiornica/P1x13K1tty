@@ -8,6 +8,7 @@ extends CharacterBody2D
 
 
 func _ready() -> void:
+
 	set_process_input(true)
 	await get_tree().create_timer(0.5).timeout
 	
@@ -26,7 +27,6 @@ func _ready() -> void:
 		DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
 		DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 	
-
 
 
 

@@ -44,7 +44,7 @@ anchor_bottom = 1.0
 offset_left = -484.0
 offset_top = -66.0
 offset_right = 510.0
-offset_bottom = -250.0
+offset_bottom = -481.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_o24hs")
@@ -77,13 +77,6 @@ texture = ExtResource("7_pqhp0")
 [node name="Hook" type="Area2D" parent="FishingGame"]
 position = Vector2(953, 982)
 scale = Vector2(0.20142613, 0.23636578)
-
-[node name="Camera2D" type="Camera2D" parent="FishingGame/Hook"]
-position = Vector2(193.61923, -253.8435)
-scale = Vector2(4.964598, 4.23073)
-limit_enabled = false
-position_smoothing_enabled = true
-position_smoothing_speed = 4.0
 
 [node name="Sprite2D" type="Sprite2D" parent="FishingGame/Hook"]
 position = Vector2(9.929192, -3794.9656)
@@ -155,7 +148,7 @@ bus = &"Sfx"
 modulate = Color(0, 0, 0, 0.17254902)
 self_modulate = Color(0.5370113, 0.5370113, 0.5370113, 0.827451)
 show_behind_parent = true
-position = Vector2(1454, 1807)
+position = Vector2(1468.0001, 1430)
 scale = Vector2(3.2309763, 3.1563573)
 texture = ExtResource("7_pqhp0")
 flip_h = true

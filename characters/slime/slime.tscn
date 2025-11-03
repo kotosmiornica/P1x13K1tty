@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://ogik4s70pgwl"]
+[gd_scene load_steps=14 format=3 uid="uid://ogik4s70pgwl"]
 
 [ext_resource type="Script" uid="uid://4ykjhc3fqg8i" path="res://characters/slime/slime.gd" id="1_87y5x"]
 [ext_resource type="Texture2D" uid="uid://hrb0m3rujjwe" path="res://images/pixelated_slime/pixelatedgrounddd2.png" id="2_pyxg0"]
 [ext_resource type="Texture2D" uid="uid://c078jrp2yvc4s" path="res://characters/slime/slime_face.png" id="2_ygydt"]
+[ext_resource type="Texture2D" uid="uid://dvgfmy6vtvjji" path="res://characters/slime/slime_body.png" id="3_748pi"]
 [ext_resource type="Texture2D" uid="uid://d0hfbxkaw44mi" path="res://images/pixelated_slime/greenpixelated_slime.png" id="3_pyxg0"]
 [ext_resource type="Texture2D" uid="uid://bh7m7yq7hbp8r" path="res://images/pixelated_slime/orangepixelated_slime.png" id="4_748pi"]
 [ext_resource type="Texture2D" uid="uid://bd680det3wr4v" path="res://images/pixelated_slime/madpixelated_face.png" id="6_pyxg0"]
@@ -289,7 +290,7 @@ texture = ExtResource("2_pyxg0")
 [node name="SlimeBody" type="Sprite2D" parent="Anchor"]
 z_index = 2
 position = Vector2(0, 20)
-texture = ExtResource("3_pyxg0")
+texture = ExtResource("3_748pi")
 offset = Vector2(0, -36)
 
 [node name="SlimeBodyHurt" type="Sprite2D" parent="Anchor/SlimeBody"]

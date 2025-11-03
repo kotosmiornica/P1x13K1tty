@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dknitauknxy07"]
+
+[node name="Leaderboard" type="Node2D"]
+
+[node name="OldBoard" type="TextEdit" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="HighScores" type="TextureRect" parent="OldBoard"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Tree" type="HBoxContainer" parent="."]
+offset_right = 16.0
+offset_bottom = 17.0
