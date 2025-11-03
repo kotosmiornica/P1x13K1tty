@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://uqvc1o3ql3cn"
+path="res://.godot/imported/LeekGotFirstDrink.dialogue-2034947b124d2b8aee2471324d4a9978.tres"
+
+[deps]
+
+source_file="res://dialogues/LeekGotFirstDrink.dialogue"
+dest_files=["res://.godot/imported/LeekGotFirstDrink.dialogue-2034947b124d2b8aee2471324d4a9978.tres"]
+
+[params]
+
+defaults=true

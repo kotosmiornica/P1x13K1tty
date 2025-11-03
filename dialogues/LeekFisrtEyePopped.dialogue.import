@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bwdqu23yo0rop"
+path="res://.godot/imported/LeekFisrtEyePopped.dialogue-915d6d7d15bcb4680b71d95db6a04b19.tres"
+
+[deps]
+
+source_file="res://dialogues/LeekFisrtEyePopped.dialogue"
+dest_files=["res://.godot/imported/LeekFisrtEyePopped.dialogue-915d6d7d15bcb4680b71d95db6a04b19.tres"]
+
+[params]
+
+defaults=true

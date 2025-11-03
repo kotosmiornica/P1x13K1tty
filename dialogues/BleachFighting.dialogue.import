@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://pvrlycq2p1yk"
+path="res://.godot/imported/BleachFighting.dialogue-e627957acc1d96c18b805f1459d03832.tres"
+
+[deps]
+
+source_file="res://dialogues/BleachFighting.dialogue"
+dest_files=["res://.godot/imported/BleachFighting.dialogue-e627957acc1d96c18b805f1459d03832.tres"]
+
+[params]
+
+defaults=true

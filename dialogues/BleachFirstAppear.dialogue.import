@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dvja145hsifne"
+path="res://.godot/imported/BleachFirstAppear.dialogue-fbd7ed5aff476f3877b4e6b13a75be28.tres"
+
+[deps]
+
+source_file="res://dialogues/BleachFirstAppear.dialogue"
+dest_files=["res://.godot/imported/BleachFirstAppear.dialogue-fbd7ed5aff476f3877b4e6b13a75be28.tres"]
+
+[params]
+
+defaults=true

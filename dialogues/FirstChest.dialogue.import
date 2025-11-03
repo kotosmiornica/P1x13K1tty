@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b8bm1q1nr0mjj"
+path="res://.godot/imported/FirstChest.dialogue-3712f41aa4f1d756b323f29483338a91.tres"
+
+[deps]
+
+source_file="res://dialogues/FirstChest.dialogue"
+dest_files=["res://.godot/imported/FirstChest.dialogue-3712f41aa4f1d756b323f29483338a91.tres"]
+
+[params]
+
+defaults=true

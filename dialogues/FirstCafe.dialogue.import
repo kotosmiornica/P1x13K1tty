@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b3afkdm7m3d4n"
+path="res://.godot/imported/FirstCafe.dialogue-0ab0d21cabe2b4983cd6d621ef478b1b.tres"
+
+[deps]
+
+source_file="res://dialogues/FirstCafe.dialogue"
+dest_files=["res://.godot/imported/FirstCafe.dialogue-0ab0d21cabe2b4983cd6d621ef478b1b.tres"]
+
+[params]
+
+defaults=true
