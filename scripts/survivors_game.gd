@@ -8,6 +8,7 @@ extends Node2D
 @onready var boss_warning_label: Label = $Bar/XPbar/BossWarningLabel
 @onready var boss_warning_anim: AnimationPlayer = $BossWarningAnimation
 
+const SmallMobScene = preload("res://CuteSlime.tscn")
 const MobScene = preload("res://scenes/mob.tscn")
 const BossScene = preload("res://scenes/Boss1.tscn")
 
