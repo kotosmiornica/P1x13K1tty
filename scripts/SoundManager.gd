@@ -7,7 +7,7 @@ var current_hits: int = 0
 
 func play_hit_sound():
 	if hit_sound == null:
-		push_warning("SoundManager: hit_sound not assigned!")
+		push_warning("SoundManager: hit_sound not assigned")
 		return
 
 	var sfx = AudioStreamPlayer2D.new()
