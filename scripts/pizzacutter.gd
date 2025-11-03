@@ -26,4 +26,5 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if body.has_method("take_damage") and player:
-		body.take_damage(player.damage * damage_multiplier)
+		body.take_damage(int(player.damage * damage_multiplier))
+		SoundManager.play_hit_sound()

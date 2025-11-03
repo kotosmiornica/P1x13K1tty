@@ -9,7 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://bnda3v2s6m0k3" path="res://SOUNDS/sounds/menuclick.wav" id="6_j8nn3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fi02i"]
-bg_color = Color(0.45977718, 0, 0.19735622, 1)
+bg_color = Color(0.5231931, 0, 0.09417965, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10

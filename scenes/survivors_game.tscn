@@ -1982,9 +1982,9 @@ color = Color(1, 0.665829, 0.67419916, 0.27450982)
 top_level = true
 z_index = 642
 offset_left = -1052.0
-offset_top = -55924.0
+offset_top = -55893.0
 offset_right = 2964.0
-offset_bottom = 50472.0
+offset_bottom = 50503.0
 color = Color(0.3647059, 0, 0.5254902, 0.3647059)
 
 [node name="Camera2D" type="Camera2D" parent="Brotat"]
@@ -2234,7 +2234,7 @@ scale = Vector2(2.2233317, 2.2233317)
 texture = ExtResource("14_8gmy3")
 
 [node name="Daffodil" type="Sprite2D" parent="LeftWall/Flowers"]
-position = Vector2(1071.4949, 1699.6128)
+position = Vector2(1162.7725, 1691.0698)
 scale = Vector2(2.2233317, 2.2233317)
 texture = ExtResource("15_cjyux")
 
@@ -2249,7 +2249,7 @@ scale = Vector2(2.2233317, 2.2233317)
 texture = ExtResource("17_nkvhx")
 
 [node name="Rose" type="Sprite2D" parent="LeftWall/Flowers"]
-position = Vector2(1119, 2262)
+position = Vector2(1132.991, 3071.3762)
 scale = Vector2(2.2233317, 2.2233317)
 texture = ExtResource("18_c0lnf")
 
@@ -2383,7 +2383,7 @@ scale = Vector2(2.9576406, 2.9576406)
 texture = ExtResource("21_botwr")
 
 [node name="Cosmo6" type="Sprite2D" parent="LeftWall/Flowers"]
-position = Vector2(845.53485, 2062.6907)
+position = Vector2(915.45654, 1833.5032)
 scale = Vector2(2.9576406, 2.9576406)
 texture = ExtResource("16_5fga3")
 
@@ -96965,8 +96965,7 @@ libraries = {
 [node name="DownWall" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DownWall"]
-visible = false
-position = Vector2(963, 47069)
+position = Vector2(963, 46986)
 shape = SubResource("WorldBoundaryShape2D_56ad6")
 
 [node name="TopWall" type="StaticBody2D" parent="."]

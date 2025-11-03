@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dx8chnjj6yth3"]
+[gd_scene load_steps=17 format=3 uid="uid://dx8chnjj6yth3"]
 
 [ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_pqhbs"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="2_ixsdo"]
@@ -66,6 +66,13 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_www6x"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_www6x"]
 atlas = ExtResource("5_ixsdo")
 region = Rect2(0, 18, 94, 48)
@@ -127,6 +134,7 @@ grow_vertical = 2
 clip_children = 2
 layout_mode = 2
 mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_www6x")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer"]
 layout_mode = 2

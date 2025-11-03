@@ -85,6 +85,7 @@ config/icon="uid://biggnkfn2sa25"
 Global="*res://Global.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 LootLockerSDK="*res://addons/LootLockerSDK/LootLockerSDK.gd"
+SoundManager="*res://scripts/SoundManager.gd"
 
 [display]
 

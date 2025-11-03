@@ -65,7 +65,7 @@ func apply_status_effect(effect_name: String, duration: float, damage_per_second
 func take_damage(amount: int):
 	health -= amount
 	%Slime.play_hurt()
-	$slimehurt.play()
+	SoundManager.play_hit_sound()
 	_show_damage_popup(amount)
 	if health <= 0:
 		drop_xp()

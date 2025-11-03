@@ -7,7 +7,7 @@ Cat: [speed=0.5]woah a human
 	- ok fine I'm human
 		Cat: that's right
 		Cat: anyways I was about to go fishing
-		Cat: till you interrupted me
+		Cat: till you interrupted me.
 		- fishing sounds dumb
 			Cat: you sound dumb
 			Cat: anyways tap the ocean to throw the hook
@@ -35,6 +35,17 @@ Cat: [speed=0.5]woah a human
 	Cat: of course I can talk! you think I'm stupid?
 	- of course not!
 		Cat: that's what I thought
+		Cat: anyways I was about to go fishing
+		Cat: till you interrupted me
+		- fishing sounds dumb
+			Cat: you sound dumb
+			Cat: anyways tap the ocean to throw the hook
+			Cat: it's too heavy for me to throw it myself
+			=> fishing_convo
+		- I wanna go fishing too!
+			Cat: yay, we can fish together!
+			Cat: tap the ocean to throw the hook
+			=> fishing_convo2
 	- yeah!
 		Cat: I bet I'm smarter than you
 		Cat: anyways I was about to go fishing

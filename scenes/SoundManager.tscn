@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd58m6v6cww5f"]
+
+[ext_resource type="Script" uid="uid://71qbd5sijyfn" path="res://scripts/SoundManager.gd" id="1_rupev"]
+[ext_resource type="AudioStream" uid="uid://6oainuiljw2o" path="res://SOUNDS/sounds/slime-squish-5-218569.mp3" id="2_p1llj"]
+
+[node name="SoundManager" type="Node"]
+script = ExtResource("1_rupev")
+hit_sound = ExtResource("2_p1llj")
