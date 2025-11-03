@@ -41,8 +41,7 @@ var mutation_cooldown: Timer = Timer.new()
 
 ## The base balloon anchor
 @onready var balloon: Control = %Balloon
-@onready var cat_head = $c
-@onready var leek_head = $Balloon/LeekHead
+
 ## The label showing the name of the currently speaking character
 @onready var character_label: RichTextLabel = %CharacterLabel
 
@@ -51,6 +50,7 @@ var mutation_cooldown: Timer = Timer.new()
 
 ## The menu of responses
 @onready var responses_menu: DialogueResponsesMenu = %ResponsesMenu
+
 
 func _ready() -> void:
 	balloon.hide()
@@ -62,7 +62,6 @@ func _ready() -> void:
 
 	mutation_cooldown.timeout.connect(_on_mutation_cooldown_timeout)
 	add_child(mutation_cooldown)
-
 
 
 func _unhandled_input(_event: InputEvent) -> void:
@@ -90,13 +89,6 @@ func start(dialogue_resource: DialogueResource, title: String, extra_game_states
 
 ## Apply any changes to the balloon given a new [DialogueLine].
 func apply_dialogue_line() -> void:
-	var full_text = dialogue_line.text
-	var colon_index = full_text.find(":")
-	var speaker = ""
-	if colon_index != -1:
-		speaker = full_text.substr(0, colon_index).strip_edges()
-	
-	
 	mutation_cooldown.stop()
 
 	is_waiting_for_input = false
@@ -109,17 +101,8 @@ func apply_dialogue_line() -> void:
 
 	responses_menu.hide()
 	responses_menu.responses = dialogue_line.responses
-	
-	if speaker == "Cat":
-		cat_head.visible = true
-		leek_head.visible = false
-	elif speaker == "Leek":
-		cat_head.visible = false
-		leek_head.visible = true
-	else:
-		cat_head.visible = false
-		leek_head.visible = false
-	
+
+	# Show our balloon
 	balloon.show()
 	will_hide_balloon = false
 
@@ -160,9 +143,6 @@ func _on_mutated(_mutation: Dictionary) -> void:
 	is_waiting_for_input = false
 	will_hide_balloon = true
 	mutation_cooldown.start(0.1)
-	
-	cat_head.visible = false
-	leek_head.visible = false
 
 
 func _on_balloon_gui_input(event: InputEvent) -> void:

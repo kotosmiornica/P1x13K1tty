@@ -117,9 +117,9 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 174.0
-offset_top = 245.0
+offset_top = 223.0
 offset_right = -174.0
-offset_bottom = 408.0
+offset_bottom = 409.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -133,6 +133,20 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer"]
 layout_mode = 2
+
+[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.501961)
+z_index = 370
+layout_mode = 2
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("2_ixsdo")
+theme_override_font_sizes/normal_font_size = 42
+bbcode_enabled = true
+text = "Cat?"
+fit_content = true
+scroll_active = false
+tab_size = 7
 
 [node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("3_www6x")]
 unique_name_in_owner = true
@@ -175,6 +189,7 @@ theme_override_font_sizes/font_size = 60
 text = "woah you can talk?"
 
 [node name="CatHead" type="AnimatedSprite2D" parent="Balloon"]
+visible = false
 top_level = true
 z_index = 530
 position = Vector2(259, 663)
@@ -184,6 +199,7 @@ animation = &"cathead"
 autoplay = "cathead"
 
 [node name="LeekHead" type="AnimatedSprite2D" parent="Balloon"]
+visible = false
 z_index = 655
 position = Vector2(1591, 621.0001)
 rotation = 0.61768454

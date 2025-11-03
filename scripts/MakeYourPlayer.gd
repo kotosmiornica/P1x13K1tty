@@ -16,9 +16,9 @@ func _ready() -> void:
 		dialogue_resource = preload("res://dialogues/CatDialogue1.dialogue")
 		Global.cat_intro_played = true
 	
-	elif Global.cat_dialogue_state == 2 and not Global.cat_fishing_played:
-		dialogue_resource = preload("res://dialogues/CatDialogue2.dialogue")
-		Global.cat_fishing_played = true
+	#elif Global.cat_dialogue_state == 2 and not Global.cat_fishing_played:
+	#	dialogue_resource = preload("res://dialogues/CatDialogue2.dialogue")
+	#	Global.cat_fishing_played = true
 		
 	else:
 		return

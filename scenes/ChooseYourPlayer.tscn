@@ -1,6 +1,7 @@
-[gd_scene load_steps=71 format=3 uid="uid://ir2j60as2m8m"]
+[gd_scene load_steps=72 format=3 uid="uid://ir2j60as2m8m"]
 
 [ext_resource type="Script" uid="uid://dq8nhpeb04bh8" path="res://scripts/MakeYourPlayer.gd" id="1_28sph"]
+[ext_resource type="Resource" uid="uid://2v8kndq3bhcy" path="res://dialogues/CatDialogue1.dialogue" id="2_gvnus"]
 [ext_resource type="Texture2D" uid="uid://5eiwexwlw540" path="res://images/sheets/FINALlyCatIdleAnim.png" id="2_teihm"]
 [ext_resource type="AudioStream" uid="uid://cst0fkfiwcg1i" path="res://SOUNDS/sounds/angrymeow.wav" id="3_xx2wl"]
 
@@ -477,6 +478,7 @@ height = 298.0
 top_level = true
 platform_floor_layers = 0
 script = ExtResource("1_28sph")
+dialogue_resource = ExtResource("2_gvnus")
 
 [node name="Car" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
@@ -506,5 +508,5 @@ debug_color = Color(0.854248, 0.314498, 0.503126, 0.42)
 
 [node name="MeowPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_xx2wl")
-volume_db = 19.865
+volume_db = 4.812
 bus = &"Sfx"

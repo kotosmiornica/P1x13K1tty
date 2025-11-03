@@ -869,7 +869,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"BlueWig_walk",
-"speed": 39.0
+"speed": 33.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kbgxq"]
@@ -1330,7 +1330,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Heart_walk",
-"speed": 39.0
+"speed": 33.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ax4bv"]
@@ -1791,7 +1791,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"EmotionalWig_walk",
-"speed": 39.0
+"speed": 33.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7yhjp"]
