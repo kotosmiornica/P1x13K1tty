@@ -2025,7 +2025,7 @@ position = Vector2(-57.444096, 1370.2512)
 scale = Vector2(0.07131729, -0.0075273714)
 curve = SubResource("Curve2D_qqaft")
 
-[node name="PathFollor2DSecond" type="PathFollow2D" parent="Brotat/Path2DSecond"]
+[node name="PathFollow2DSecond" type="PathFollow2D" parent="Brotat/Path2DSecond"]
 unique_name_in_owner = true
 position = Vector2(-286, -303)
 rotation = -1.5643272

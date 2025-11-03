@@ -8,7 +8,7 @@ extends Node2D
 @onready var boss_warning_label: Label = $Bar/XPbar/BossWarningLabel
 @onready var boss_warning_anim: AnimationPlayer = $BossWarningAnimation
 
-const SmallMobScene = preload("res://CuteSlime.tscn")
+const SmallMobScene = preload("res://scenes/CuteSlime.tscn")
 const MobScene = preload("res://scenes/mob.tscn")
 const BossScene = preload("res://scenes/Boss1.tscn")
 
@@ -79,25 +79,51 @@ func _spawn_boss() -> void:
 func _spawn_wave(enemy_count: int):
 	if boss_alive:
 		return
+	
 	var half = enemy_count / 2
+	var path1 = $Brotat/Path2D/PathFollow2D
+	var path2 = $Brotat/Path2DSecond/PathFollow2DSecond
+	
+	if not path1 or not path2:
+		push_error("Path nodes not found, check node names under $Brotat")
+		return
 	
 	for i in range(half):
-		_spawn_mob($Brotat/Path2D/PathFollow2D)
+		_spawn_mob(path1)
 		
 	for i in range(half):
-		_spawn_mob($Brotat/Path2DSecond/PathFollor2DSecond)
+		_spawn_mob(path2)
 		
 	if enemy_count % 2 != 0:
-		_spawn_mob($Brotat/Path2DSecond/PathFollor2DSecond)
+		_spawn_mob(path2)
 
 func _spawn_mob(path: PathFollow2D):
-	var new_mob = MobScene.instantiate()
+	var chosen_scene: PackedScene = SmallMobScene if randf() <0.3 else MobScene
+	
+	if chosen_scene == null:
+		push_error("Spawner: chosen_Scene is null")
+		return
+	
+	
+	var new_mob = chosen_scene.instantiate()
+	if new_mob == null:
+		push_error("Spawner: failed to instiantiate chosen_scene")
+		return
+	
+	
 	path.progress_ratio = randf()
 	new_mob.global_position = path.global_position
+	
 	call_deferred("add_child", new_mob)
 	alive_enemies += 1
-	new_mob.connect("died", Callable(self, "_on_enemy_died").bind(new_mob))
-
+	
+	if new_mob.has_signal("died"):
+		new_mob.connect("died", Callable(self, "_on_enemy_died"))
+	else:
+		push_warning("Spawner: spawned mob '%s' has no 'died' signal" % new_mob.name)
+	
+	print("Spawner: spawned '%s' at %s. alive_enemies=%d" % [new_mob.name, str(new_mob.global_position), alive_enemies])
+	
 
 
 func _on_enemy_died(mob: Node) -> void:

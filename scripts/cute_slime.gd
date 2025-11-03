@@ -16,13 +16,13 @@ const MEDKIT_SCENE = preload("res://scenes/MedKit.tscn")
 const SMOKE_SCENE = preload("res://smoke_explosion/smoke_explosion.tscn")
 
 func _ready() -> void:
-	%Slime.play_walk()
+	%AnimationPlayer.play("walk")
 	add_to_group("enemies")
 	if has_node("KillZone"):
 		var kill_zone = $KillZone
 		kill_zone.connect("body_entered", Callable(self, "_on_KillZone_body_entered"))
 		kill_zone.connect("body_exited", Callable(self, "_on_KillZone_body_exited"))
-
+	
 func _physics_process(delta: float) -> void:
 	var target = player.global_position + Vector2(randf_range(-50, 50), randf_range(-50, 50))
 	var direction = (target - global_position).normalized()
@@ -34,10 +34,10 @@ func _physics_process(delta: float) -> void:
 		if damage_timer >= damage_interval:
 			player.take_damage(damage_amount)
 			damage_timer = 0.0
-
+			
 func take_damage(amount: int):
 	health -= amount
-	%Slime.play_hurt()
+	%AnimationPlayer.play("hurt")
 	$slimehurt.play()
 	_show_damage_popup(amount)
 	if health <= 0:
@@ -46,7 +46,7 @@ func take_damage(amount: int):
 		var smoke = SMOKE_SCENE.instantiate()
 		get_parent().add_child(smoke)
 		smoke.global_position = global_position
-		emit_signal("died")
+		emit_signal("died", self)
 		queue_free()
 
 func _show_damage_popup(amount: int):
