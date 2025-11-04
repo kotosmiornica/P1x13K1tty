@@ -73,7 +73,7 @@ func take_damage(amount: int):
 		var smoke = SMOKE_SCENE.instantiate()
 		get_parent().add_child(smoke)
 		smoke.global_position = global_position
-		emit_signal("died", self)
+		emit_signal("died")
 		$slimehurt.play()
 		queue_free()
 

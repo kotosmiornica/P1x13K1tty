@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cwyddtn83ubaj"]
+[gd_scene load_steps=14 format=3 uid="uid://cwyddtn83ubaj"]
 
 [ext_resource type="Script" uid="uid://bjsl6ysnftgno" path="res://scripts/pause_menu.gd" id="1_myx47"]
 [ext_resource type="Shader" uid="uid://b2w8n2w26ciqr" path="res://scenes/pause_menu.gdshader" id="1_n87rw"]
@@ -10,6 +10,15 @@
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uahpa"]
 shader = ExtResource("1_n87rw")
 shader_parameter/lod = 0.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4r4p"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1s2dm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88e76"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="Animation" id="Animation_5d2l8"]
 length = 0.001
@@ -107,11 +116,11 @@ alignment = 1
 
 [node name="Resume" type="Button" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer"]
 layout_mode = 2
-focus_mode = 0
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("3_5d2l8")
 theme_override_styles/pressed = ExtResource("4_v4r4p")
 theme_override_styles/hover = ExtResource("5_1s2dm")
+theme_override_styles/focus = SubResource("StyleBoxFlat_v4r4p")
 text = "Resume"
 
 [node name="click" type="AudioStreamPlayer" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer/Resume"]
@@ -120,11 +129,11 @@ bus = &"Sfx"
 
 [node name="Restart" type="Button" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer"]
 layout_mode = 2
-focus_mode = 0
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("3_5d2l8")
 theme_override_styles/pressed = ExtResource("4_v4r4p")
 theme_override_styles/hover = ExtResource("5_1s2dm")
+theme_override_styles/focus = SubResource("StyleBoxFlat_1s2dm")
 text = "Restart :("
 
 [node name="click" type="AudioStreamPlayer" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer/Restart"]
@@ -133,11 +142,11 @@ bus = &"Sfx"
 
 [node name="MainMenu" type="Button" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer"]
 layout_mode = 2
-focus_mode = 0
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("3_5d2l8")
 theme_override_styles/pressed = ExtResource("4_v4r4p")
 theme_override_styles/hover = ExtResource("5_1s2dm")
+theme_override_styles/focus = SubResource("StyleBoxFlat_88e76")
 text = "Main Menu"
 
 [node name="click" type="AudioStreamPlayer" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer/MainMenu"]

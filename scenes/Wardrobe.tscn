@@ -1,4 +1,4 @@
-[gd_scene load_steps=164 format=3 uid="uid://yol17uvac0dx"]
+[gd_scene load_steps=168 format=3 uid="uid://yol17uvac0dx"]
 
 [ext_resource type="Script" uid="uid://bwlrd8flpldv8" path="res://scripts/wardrobe.gd" id="1_82s2s"]
 [ext_resource type="Texture2D" uid="uid://5eiwexwlw540" path="res://images/sheets/FINALlyCatIdleAnim.png" id="2_jv5sr"]
@@ -1000,6 +1000,12 @@ shadow_color = Color(0, 0, 0, 0.65098)
 shadow_size = 7
 shadow_offset = Vector2(0, 8)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7fpio"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3h2kh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g78dv"]
 bg_color = Color(0.0117647, 0.0117647, 0.0117647, 1)
 border_width_left = 6
@@ -1046,6 +1052,9 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.9137255)
 shadow_size = 7
 shadow_offset = Vector2(0, 15)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qsuku"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qtexn"]
 content_margin_left = 15.0
@@ -1099,6 +1108,9 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.8117647)
 shadow_size = 10
 shadow_offset = Vector2(0, 8)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kcx1o"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="Animation" id="Animation_d5b0y"]
 length = 0.001
@@ -1318,12 +1330,12 @@ offset_left = 393.0
 offset_top = 370.9965
 offset_right = 493.0
 offset_bottom = 470.9965
-focus_mode = 0
 theme_override_fonts/font = ExtResource("5_etp28")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_aveqt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_iidam")
 theme_override_styles/hover = SubResource("StyleBoxFlat_d5woo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_7fpio")
 text = "<"
 script = ExtResource("6_7fpio")
 metadata/_edit_use_anchors_ = true
@@ -1343,12 +1355,12 @@ offset_left = 1028.0
 offset_top = 370.9965
 offset_right = 1128.0
 offset_bottom = 470.9965
-focus_mode = 0
 theme_override_fonts/font = ExtResource("5_etp28")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("8_qsuku")
 theme_override_styles/pressed = ExtResource("9_kcx1o")
 theme_override_styles/hover = ExtResource("10_mgkt5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_3h2kh")
 text = ">
 "
 script = ExtResource("11_f2f1e")
@@ -1369,13 +1381,13 @@ offset_left = 626.0
 offset_top = 880.99646
 offset_right = 893.0
 offset_bottom = 971.99646
-focus_mode = 0
 theme_override_fonts/font = ExtResource("5_etp28")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_g78dv")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_d5b0y")
 theme_override_styles/hover = SubResource("StyleBoxFlat_jv5sr")
 theme_override_styles/disabled = ExtResource("9_s40fd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_qsuku")
 text = "Confirm"
 script = ExtResource("12_k25x8")
 metadata/_edit_use_anchors_ = true
@@ -1395,7 +1407,6 @@ offset_left = 1596.0
 offset_top = 112.0
 offset_right = 1711.0
 offset_bottom = 209.38461
-focus_mode = 0
 theme_override_colors/font_color = Color(0.76862746, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.66560405, 8.061901e-07, 4.3317675e-07, 1)
 theme_override_colors/font_hover_color = Color(0.9682372, 0.003346892, 0.0018343591, 1)
@@ -1404,6 +1415,7 @@ theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = SubResource("StyleBoxFlat_qtexn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_47cij")
 theme_override_styles/hover = SubResource("StyleBoxFlat_etp28")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kcx1o")
 text = "X"
 script = ExtResource("17_6v2e3")
 metadata/_edit_use_anchors_ = true

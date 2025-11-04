@@ -1,4 +1,4 @@
-[gd_scene load_steps=128 format=3 uid="uid://58ityb3umon8"]
+[gd_scene load_steps=132 format=3 uid="uid://58ityb3umon8"]
 
 [ext_resource type="Script" uid="uid://de51rx2m8hibh" path="res://scripts/Shopp.gd" id="1_24207"]
 [ext_resource type="Texture2D" uid="uid://bkcljvg88hmay" path="res://images/sheets/UndHeartSheet.png" id="2_24207"]
@@ -815,6 +815,12 @@ shadow_color = Color(0, 0, 0, 0.65098)
 shadow_size = 7
 shadow_offset = Vector2(0, 8)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cb6n5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ll2t5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g78u"]
 bg_color = Color(0.0117647, 0.0117647, 0.0117647, 1)
 border_width_left = 6
@@ -861,6 +867,9 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.9137255)
 shadow_size = 7
 shadow_offset = Vector2(0, 15)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wx4sd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsnv8"]
 content_margin_left = 15.0
@@ -914,6 +923,9 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.8117647)
 shadow_size = 10
 shadow_offset = Vector2(0, 8)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ko483"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Shop" type="CanvasLayer"]
 process_mode = 3
@@ -1009,12 +1021,12 @@ offset_left = 393.0
 offset_top = 370.9965
 offset_right = 493.0
 offset_bottom = 470.9965
-focus_mode = 0
 theme_override_fonts/font = ExtResource("4_402gu")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_0wr65")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_sf2aa")
 theme_override_styles/hover = SubResource("StyleBoxFlat_iqtud")
+theme_override_styles/focus = SubResource("StyleBoxFlat_cb6n5")
 text = "<"
 script = ExtResource("5_oahkd")
 metadata/_edit_use_anchors_ = true
@@ -1029,12 +1041,12 @@ offset_left = 1028.0
 offset_top = 370.9965
 offset_right = 1128.0
 offset_bottom = 470.9965
-focus_mode = 0
 theme_override_fonts/font = ExtResource("4_402gu")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("4_24207")
 theme_override_styles/pressed = ExtResource("3_ur338")
 theme_override_styles/hover = ExtResource("5_402gu")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ll2t5")
 text = ">
 "
 script = ExtResource("10_nrrf8")
@@ -1050,13 +1062,13 @@ offset_left = 626.0
 offset_top = 880.99646
 offset_right = 893.0
 offset_bottom = 971.99646
-focus_mode = 0
 theme_override_fonts/font = ExtResource("4_402gu")
 theme_override_font_sizes/font_size = 46
 theme_override_styles/normal = SubResource("StyleBoxFlat_1g78u")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oahkd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_fqaxf")
 theme_override_styles/disabled = ExtResource("12_hcwdo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_wx4sd")
 text = "Purchase"
 script = ExtResource("13_hcwdo")
 metadata/_edit_use_anchors_ = true
@@ -1081,7 +1093,6 @@ offset_left = 1539.0
 offset_top = 84.00003
 offset_right = 1654.0
 offset_bottom = 181.38464
-focus_mode = 0
 theme_override_colors/font_color = Color(0.76862746, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.66560405, 8.061901e-07, 4.3317675e-07, 1)
 theme_override_colors/font_hover_color = Color(0.9682372, 0.003346892, 0.0018343591, 1)
@@ -1090,6 +1101,7 @@ theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = SubResource("StyleBoxFlat_xsnv8")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cn3sd")
 theme_override_styles/hover = SubResource("StyleBoxFlat_hcwdo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ko483")
 text = "X"
 script = ExtResource("9_fqaxf")
 

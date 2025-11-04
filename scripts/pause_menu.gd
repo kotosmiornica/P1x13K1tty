@@ -2,9 +2,10 @@ extends Control
 
 func _ready() -> void:
 	hide_pause_menu()
+	if buttons.size() > 0:
+		buttons[selected_index].grab_focus()
 
 
-# -----------------------------
 # Help functions
 # -----------------------------
 func set_menu_active(active: bool) -> void:
@@ -20,7 +21,6 @@ func apply_mouse_filter_recursive(control: Control, filter_value: int) -> void:
 			apply_mouse_filter_recursive(child, filter_value)
 
 
-# -----------------------------
 # Show / Hide Menu
 # -----------------------------
 func show_pause_menu():
@@ -29,6 +29,8 @@ func show_pause_menu():
 	$CanvasLayer/ColorRect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	$CanvasLayer/ColorRect/PanelContainer.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	$AnimationPlayer.play("blur")
+	selected_index = 0
+	buttons[selected_index].grab_focus()
 
 
 func hide_pause_menu():
@@ -38,7 +40,6 @@ func hide_pause_menu():
 	$CanvasLayer/ColorRect/PanelContainer.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 
-# -----------------------------
 # Pause / Resume
 # -----------------------------
 func pause():
@@ -88,15 +89,41 @@ func _on_settings_pressed() -> void:
 	else:
 		print("Animation node not found!")
 
+func _on_main_menu_pressed() -> void:
+	get_tree().paused = false
+	$CanvasLayer/ColorRect/PanelContainer/VBoxContainer/MainMenu/click.play()
+	Global.reset_run_data()
+	get_tree().change_scene_to_file("res://scenes/Menu.tscn")
+
+
 
 #other
 func _on_AnimationPlayer_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "blur":
 		apply_mouse_filter_recursive($PauseMenu, Control.MOUSE_FILTER_STOP)
 
+#keyboard navigation
 
-func _on_main_menu_pressed() -> void:
-	get_tree().paused = false
-	$CanvasLayer/ColorRect/PanelContainer/VBoxContainer/MainMenu/click.play()
-	Global.reset_run_data()
-	get_tree().change_scene_to_file("res://scenes/Menu.tscn")
+@onready var buttons = [
+	$CanvasLayer/ColorRect/PanelContainer/VBoxContainer/Resume,
+	$CanvasLayer/ColorRect/PanelContainer/VBoxContainer/Restart,
+	$CanvasLayer/ColorRect/PanelContainer/VBoxContainer/MainMenu
+]
+
+var selected_index := 0
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if not get_tree().paused:
+		return
+	
+	if event.is_action_pressed("ui_down"):
+		selected_index = (selected_index + 1) %buttons.size()
+		buttons[selected_index].grab_focus()
+	
+	elif event.is_action_pressed("ui_up"):
+		selected_index = (selected_index - 1 + buttons.size()) % buttons.size()
+		buttons[selected_index].grab_focus()
+	
+	elif event.is_action_pressed("ui_accept"):
+		buttons[selected_index].emit_signal()

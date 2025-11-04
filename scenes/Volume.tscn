@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bkqp1n5b6xmb2"]
+[gd_scene load_steps=21 format=3 uid="uid://bkqp1n5b6xmb2"]
 
 [ext_resource type="Script" uid="uid://d3cf6jg56kb2h" path="res://scripts/volume.gd" id="1_6a28u"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="2_jvxff"]
@@ -79,6 +79,9 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 0.8117647)
 shadow_size = 10
 shadow_offset = Vector2(0, 8)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfqfc"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jvxff"]
 bg_color = Color(0, 0.20633268, 0.4776796, 1)
@@ -343,7 +346,6 @@ offset_left = 1559.0
 offset_top = 84.00002
 offset_right = 1652.0
 offset_bottom = 156.61542
-focus_mode = 0
 theme_override_colors/font_color = Color(0.76862746, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.66560405, 8.061901e-07, 4.3317675e-07, 1)
 theme_override_colors/font_hover_color = Color(0.9682372, 0.003346892, 0.0018343591, 1)
@@ -352,6 +354,7 @@ theme_override_font_sizes/font_size = 75
 theme_override_styles/normal = SubResource("StyleBoxFlat_1iri3")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_aosop")
 theme_override_styles/hover = SubResource("StyleBoxFlat_qdkmh")
+theme_override_styles/focus = SubResource("StyleBoxFlat_sfqfc")
 text = "X"
 script = ExtResource("3_jvxff")
 metadata/_edit_use_anchors_ = true

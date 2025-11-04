@@ -1,4 +1,4 @@
-[gd_scene load_steps=207 format=3 uid="uid://cqcwtk4w1gpdv"]
+[gd_scene load_steps=215 format=3 uid="uid://cqcwtk4w1gpdv"]
 
 [ext_resource type="Script" uid="uid://d1wrmtooq2n67" path="res://scripts/menu.gd" id="1_jmdev"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="1_o0tnf"]
@@ -1096,6 +1096,15 @@ corner_detail = 20
 shadow_color = Color(0, 0, 0, 0.682353)
 shadow_offset = Vector2(10, 10)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqqfh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22i10"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwo1h"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [sub_resource type="Animation" id="Animation_6c8sk"]
 resource_name = "Fade"
 tracks/0/type = "value"
@@ -1234,6 +1243,12 @@ shadow_color = Color(0, 0, 0, 1)
 shadow_size = 15
 shadow_offset = Vector2(2, 10)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btpd2"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ksyst"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r54wa"]
 content_margin_left = 2.0
 content_margin_top = 4.0
@@ -1301,6 +1316,9 @@ expand_margin_bottom = 2.0
 shadow_color = Color(0, 0, 0, 1)
 shadow_size = 15
 shadow_offset = Vector2(2, 10)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27abv"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rehui"]
 bg_color = Color(0.9607843, 0.07058824, 0, 1)
@@ -1390,6 +1408,9 @@ shadow_color = Color(0, 0, 0, 1)
 shadow_size = 18
 shadow_offset = Vector2(2, 10)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_prgnb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [sub_resource type="Animation" id="Animation_r54wa"]
 resource_name = "Jump"
 length = 2.4
@@ -1469,6 +1490,9 @@ _data = {
 &"RESET": SubResource("Animation_uds2g"),
 &"Slide": SubResource("Animation_uwbky")
 }
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0d5s4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="Animation" id="Animation_d5b0y"]
 length = 0.001
@@ -1825,7 +1849,6 @@ offset_right = 889.0
 offset_bottom = -135.0
 grow_horizontal = 2
 grow_vertical = 2
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 0.7727881, 0.91755927, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 70
@@ -1846,13 +1869,13 @@ offset_left = 403.0
 offset_top = 36.0
 offset_right = 709.0
 offset_bottom = 128.0
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 0.7727881, 0.91755927, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("14_uwbky")
 theme_override_styles/hover = ExtResource("15_r54wa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_yqqfh")
 text = "Shop :3"
 script = ExtResource("6_4umqm")
 
@@ -1868,12 +1891,12 @@ offset_top = 154.00002
 offset_right = 731.0
 offset_bottom = 233.00002
 scale = Vector2(0.8830157, 0.8830157)
-focus_mode = 0
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("7_el213")
 theme_override_styles/hover = ExtResource("7_el213")
+theme_override_styles/focus = SubResource("StyleBoxFlat_22i10")
 text = "Wardrobe"
 script = ExtResource("16_i7htd")
 
@@ -1888,13 +1911,13 @@ offset_top = 956.0
 offset_right = 1442.0
 offset_bottom = 1085.0
 scale = Vector2(1.0775006, 1.0775006)
-focus_mode = 0
 theme_override_colors/font_color = Color(0.6689031, 0.9386557, 0.99999994, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("14_uwbky")
 theme_override_styles/hover = ExtResource("15_r54wa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gwo1h")
 text = "> Go fishing! <
 "
 flat = true
@@ -1946,7 +1969,6 @@ offset_bottom = -255.05817
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.9015093, 0.9015093)
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 40
@@ -1954,6 +1976,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yt8fu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m74h7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_gut0v")
 theme_override_styles/disabled = ExtResource("19_760fv")
+theme_override_styles/focus = SubResource("StyleBoxFlat_btpd2")
 text = "Unlock level 3!
 Cost: 280 Coins"
 autowrap_mode = 3
@@ -1985,7 +2008,6 @@ offset_bottom = -254.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.9015093, 0.9015093)
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 40
@@ -1993,6 +2015,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yt8fu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m74h7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_gut0v")
 theme_override_styles/disabled = ExtResource("19_760fv")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ksyst")
 text = "Unlock level 2!
 Cost: 155 Coins"
 autowrap_mode = 3
@@ -2032,6 +2055,7 @@ theme_override_font_sizes/font_size = 52
 theme_override_styles/normal = SubResource("StyleBoxFlat_r54wa")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uds2g")
 theme_override_styles/hover = SubResource("StyleBoxFlat_jvsdq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_27abv")
 autowrap_mode = 3
 script = ExtResource("23_8fhjo")
 
@@ -2063,7 +2087,6 @@ offset_right = 544.0
 offset_bottom = -228.0
 grow_horizontal = 2
 grow_vertical = 2
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 34
@@ -2071,6 +2094,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_rehui")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uwbky")
 theme_override_styles/hover = SubResource("StyleBoxFlat_yvxia")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_nxcfj")
+theme_override_styles/focus = SubResource("StyleBoxFlat_prgnb")
 text = "UNLOCK AUTO GUN!
 <400coins>"
 autowrap_mode = 3
@@ -2125,13 +2149,13 @@ offset_bottom = -389.87314
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.9015093, 0.9015093)
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("14_uwbky")
 theme_override_styles/hover = ExtResource("15_r54wa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_0d5s4")
 text = "Fight! (endless)"
 autowrap_mode = 3
 script = ExtResource("2_5yleq")
