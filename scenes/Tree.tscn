@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bhtwpmbf3myar"]
 
 [ext_resource type="Texture2D" uid="uid://b7rhtttevhxtj" path="res://characters/ground_shadow.png" id="1_omb14"]
-[ext_resource type="Texture2D" uid="uid://caqfk2xng5v5u" path="res://trees/pine_tree.png" id="2_874r4"]
+[ext_resource type="Texture2D" uid="uid://caqfk2xng5v5u" path="res://transl/trees/pine_tree.png" id="2_874r4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_omb14"]
 radius = 35.0
