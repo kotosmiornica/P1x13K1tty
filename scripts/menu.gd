@@ -7,7 +7,7 @@ extends Control
 @onready var food_counter_label = $ColorRect/FoodCounterLabel
 @onready var fishing_level2_label = $UnlockLevel2
 @onready var fishing_level3_label = $UnlockLevel3
-@export var coins_per_food: int = 30
+@export var coins_per_food: int = 11
 @export var coin_stagger: float = 0.05
 
 var food_counts := {}

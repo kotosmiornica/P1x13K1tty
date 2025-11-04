@@ -2,7 +2,7 @@ extends Area2D
 
 @export var hit_sound: AudioStream
 @export var speed: float = 1000.0
-@export var damage: int = 9
+@export var damage: int = 3
 
 var direction: Vector2 = Vector2.RIGHT
 var start_position: Vector2

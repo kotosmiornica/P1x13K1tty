@@ -102,8 +102,6 @@ func _spawn_mob(path: PathFollow2D):
 	call_deferred("add_child", new_mob)
 	alive_enemies += 1
 	new_mob.connect("died", Callable(self, "_on_enemy_died").bind(new_mob))
-
-
 func _on_enemy_died(mob: Node) -> void:
 	alive_enemies -= 1
 	kill_count += 1
