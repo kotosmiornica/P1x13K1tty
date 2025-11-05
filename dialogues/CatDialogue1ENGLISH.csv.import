@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dkicvfw1f63st"
+
+[deps]
+
+files=["res://dialogues/CatDialogue1ENGLISH.en.translation"]
+
+source_file="res://dialogues/CatDialogue1ENGLISH.csv"
+dest_files=["res://dialogues/CatDialogue1ENGLISH.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0

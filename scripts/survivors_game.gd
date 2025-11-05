@@ -77,23 +77,26 @@ func _spawn_boss() -> void:
 	boss.connect("died", Callable(self, "_on_boss_died"))
 
 func _spawn_wave(enemy_count: int):
-	if boss_alive:
+	if boss_alive == true:
 		return
 	
-	var half = enemy_count / 2
+	else:
+	
+		var half = enemy_count / 2
 	
 #	if not path1 or not path2:
 #		push_error("Path nodes not found, check node names under $Brotat")
 #		return
 	
-	for i in range(half):
-		_spawn_mob($Brotat/Path2D/PathFollow2D)
+		for i in range(half):
+			_spawn_mob($Brotat/Path2D/PathFollow2D)
 		
-	for i in range(half):
-		_spawn_mob($Brotat/Path2DSecond/PathFollow2DSecond)
+		for i in range(half):
+			_spawn_mob($Brotat/Path2DSecond/PathFollow2DSecond)
 		
-	if enemy_count % 2 != 0:
-		_spawn_mob($Brotat/Path2DSecond/PathFollow2DSecond)
+		if enemy_count % 2 != 0:
+			_spawn_mob($Brotat/Path2DSecond/PathFollow2DSecond)
+		
 
 func _spawn_mob(path: PathFollow2D):
 	var new_mob = MobScene.instantiate()
@@ -102,6 +105,7 @@ func _spawn_mob(path: PathFollow2D):
 	call_deferred("add_child", new_mob)
 	alive_enemies += 1
 	new_mob.connect("died", Callable(self, "_on_enemy_died").bind(new_mob))
+
 func _on_enemy_died(mob: Node) -> void:
 	alive_enemies -= 1
 	kill_count += 1

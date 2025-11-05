@@ -1,4 +1,4 @@
-[gd_scene load_steps=215 format=3 uid="uid://cqcwtk4w1gpdv"]
+[gd_scene load_steps=216 format=3 uid="uid://cqcwtk4w1gpdv"]
 
 [ext_resource type="Script" uid="uid://d1wrmtooq2n67" path="res://scripts/menu.gd" id="1_jmdev"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="1_o0tnf"]
@@ -1640,6 +1640,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pa8yy"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -1827,10 +1830,10 @@ space/rmb - dash"
 
 [node name="FoodCounterLabel" type="Label" parent="ColorRect"]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 169.0
-offset_right = 224.0
-offset_bottom = 664.0
+offset_left = 1691.0
+offset_top = 309.0
+offset_right = 1902.0
+offset_bottom = 804.0
 theme_override_colors/font_color = Color(1, 0.7882353, 1, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 40
@@ -2040,10 +2043,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -680.0
-offset_top = -612.0
-offset_right = -474.0
-offset_bottom = -413.0
+offset_left = -682.0
+offset_top = -490.0
+offset_right = -476.0
+offset_bottom = -291.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.6199614, 0.6199614)
@@ -2081,10 +2084,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 260.0
+offset_left = 197.0
 offset_top = -371.0
-offset_right = 544.0
-offset_bottom = -228.0
+offset_right = 524.0
+offset_bottom = -233.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -2095,7 +2098,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_uwbky")
 theme_override_styles/hover = SubResource("StyleBoxFlat_yvxia")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_nxcfj")
 theme_override_styles/focus = SubResource("StyleBoxFlat_prgnb")
-text = "UNLOCK AUTO GUN!
+text = "Unlock auto-gun!
 <400coins>"
 autowrap_mode = 3
 
@@ -2226,6 +2229,25 @@ rotation = 0.61768454
 scale = Vector2(4.4653583, 4.44707)
 sprite_frames = SubResource("SpriteFrames_btpd2")
 animation = &"leek"
+
+[node name="FishUpgrades" type="Button" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 18.0
+offset_right = 358.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("1_o0tnf")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = ExtResource("7_el213")
+theme_override_styles/pressed = ExtResource("14_uwbky")
+theme_override_styles/hover = ExtResource("15_r54wa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_pa8yy")
+text = "Upgrades"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
 
 [connection signal="input_event" from="MakeYourPlayer/ClickArea" to="MakeYourPlayer" method="_on_ClickArea_input_event"]
 [connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]

@@ -2,62 +2,62 @@
 Cat: [speed=0.5]woah a human
 
 - I'm not a human!
-	Cat: don't lie to me
-	Cat: I know what a human is
+	Cat: [speed=0.15][wave amp=25 freq=5][/wave]Don't lie to me
+	Cat: [speed=0.3] I know what a human is
 	- ok fine I'm human
-		Cat: that's right
-		Cat: anyways I was about to go fishing
-		Cat: till you interrupted me.
+		Cat: [speed=0.3] that's right
+		Cat: [speed=0.3] anyways I was about to go fishing
+		Cat: [speed=0.3] till you interrupted me.
 		- fishing sounds dumb
-			Cat: you sound dumb
-			Cat: anyways tap the ocean to throw the hook
-			Cat: it's too heavy for me to throw it myself
+			Cat: [speed=0.3] you sound dumb
+			Cat: [speed=0.3] anyways tap the ocean to throw the hook
+			Cat: [speed=0.3] it's too heavy for me to throw it myself
 			=> fishing_convo
 		- I wanna go fishing too!
-			Cat: yay, we can fish together!
-			Cat: tap the ocean to throw the hook
+			Cat: [speed=0.3] yay, we can fish together!
+			Cat: [speed=0.3] tap the ocean to throw the hook
 			=> fishing_convo2
 	- I'm a cat. meow
-		Cat: you're actually a liar
-		Cat: anyways I was about to go fishing
-		Cat: till you interrupted me
+		Cat: [speed=0.3] you're actually a liar
+		Cat: [speed=0.3] anyways I was about to go fishing
+		Cat: [speed=0.3] till you interrupted me
 		- fishing sounds dumb
-			Cat: you sound dumb
-			Cat: anyways tap the ocean to throw the hook
-			Cat: it's too heavy for me to throw it myself
+			Cat: [speed=0.3] you sound dumb
+			Cat: [speed=0.3] anyways tap the ocean to throw the hook
+			Cat: [speed=0.3] it's too heavy for me to throw it myself
 			=> fishing_convo
 		- I wanna go fishing too!
-			Cat: yay, we can fish together!
-			Cat: tap the ocean to throw the hook
+			Cat: [speed=0.3] yay, we can fish together!
+			Cat: [speed=0.3] tap the ocean to throw the hook
 			=> fishing_convo2
 
 - woah you can talk?
-	Cat: of course I can talk! you think I'm stupid?
+	Cat: [speed=0.3] of course I can talk![wait=0.3] you think I'm stupid?
 	- of course not!
-		Cat: that's what I thought
-		Cat: anyways I was about to go fishing
-		Cat: till you interrupted me
+		Cat: [speed=0.3] that's what I thought
+		Cat: [speed=0.3] anyways I was about to go fishing
+		Cat: [speed=0.3] till you interrupted me
 		- fishing sounds dumb
-			Cat: you sound dumb
-			Cat: anyways tap the ocean to throw the hook
-			Cat: it's too heavy for me to throw it myself
+			Cat: [speed=0.3] you sound dumb
+			Cat: [speed=0.3] anyways tap the ocean to throw the hook
+			Cat: [speed=0.3] it's too heavy for me to throw it myself
 			=> fishing_convo
 		- I wanna go fishing too!
-			Cat: yay, we can fish together!
-			Cat: tap the ocean to throw the hook
+			Cat: [speed=0.3] yay, we can fish together!
+			Cat: [speed=0.3] tap the ocean to throw the hook
 			=> fishing_convo2
 	- yeah!
-		Cat: I bet I'm smarter than you
-		Cat: anyways I was about to go fishing
-		Cat: till you interrupted me
+		Cat: [speed=0.3] I bet I'm smarter than you
+		Cat: [speed=0.3] anyways I was about to go fishing
+		Cat: [speed=0.3] till you interrupted me
 		- fishing sounds dumb
-			Cat: you sound dumb
-			Cat: anyways tap the ocean to throw the hook
-			Cat: it's too heavy for me to throw it myself
+			Cat: [speed=0.3] you sound dumb
+			Cat: [speed=0.3] anyways tap the ocean to throw the hook
+			Cat: [speed=0.3] it's too heavy for me to throw it myself
 			=> fishing_convo
 		- I wanna go fishing too!
-			Cat: yay, we can fish together!
-			Cat: tap the ocean to throw the hook
+			Cat: [speed=0.3] yay, we can fish together!
+			Cat: [speed=0.3] tap the ocean to throw the hook
 			=> fishing_convo2
 
 => END
