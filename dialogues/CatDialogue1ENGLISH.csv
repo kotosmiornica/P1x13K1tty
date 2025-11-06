@@ -1,5 +1,4 @@
 keys,en
-[speed=0.5]woah a human,[speed=0.5]woah a human
 don't lie to me,don't lie to me
 I know what a human is,I know what a human is
 that's right,that's right
@@ -8,19 +7,36 @@ till you interrupted me.,till you interrupted me.
 you sound dumb,you sound dumb
 anyways tap the ocean to throw the hook,anyways tap the ocean to throw the hook
 it's too heavy for me to throw it myself,it's too heavy for me to throw it myself
-fishing sounds dumb,fishing sounds dumb
 "yay, we can fish together!","yay, we can fish together!"
 tap the ocean to throw the hook,tap the ocean to throw the hook
-I wanna go fishing too!,I wanna go fishing too!
-ok fine I'm human,ok fine I'm human
 you're actually a liar,you're actually a liar
 till you interrupted me,till you interrupted me
 I'm a cat. meow,I'm a cat. meow
-I'm not a human!,I'm not a human!
 of course I can talk! you think I'm stupid?,of course I can talk! you think I'm stupid?
 that's what I thought,that's what I thought
-of course not!,of course not!
 I bet I'm smarter than you,I bet I'm smarter than you
+[speed=0.5]woah a human,[speed=0.5]woah a human
+[speed=0.15]Don't lie to me,[speed=0.15]Don't lie to me
+[speed=0.3] I know what a human is,[speed=0.3] I know what a human is
+[speed=0.3] that's right,[speed=0.3] that's right
+[speed=0.3] anyways I was about to go fishing,[speed=0.3] anyways I was about to go fishing
+[speed=0.3] till you interrupted me.,[speed=0.3] till you interrupted me.
+[speed=0.3] you sound dumb,[speed=0.3] you sound dumb
+[speed=0.3] anyways tap the ocean to throw the hook,[speed=0.3] anyways tap the ocean to throw the hook
+[speed=0.3] it's too heavy for me to throw it myself,[speed=0.3] it's too heavy for me to throw it myself
+fishing sounds dumb,fishing sounds dumb
+"[speed=0.3] yay, we can fish together!","[speed=0.3] yay, we can fish together!"
+[speed=0.3] tap the ocean to throw the hook,[speed=0.3] tap the ocean to throw the hook
+I wanna go fishing too!,I wanna go fishing too!
+ok fine I'm human,ok fine I'm human
+[speed=0.3] you're actually a liar,[speed=0.3] you're actually a liar
+[speed=0.3] till you interrupted me,[speed=0.3] till you interrupted me
+I'm a cat. meow~,I'm a cat. meow~
+I'm not a human!,I'm not a human!
+[speed=0.3] of course I can talk![wait=0.3] you think I'm stupid?,[speed=0.3] of course I can talk![wait=0.3] you think I'm stupid?
+[speed=0.3] that's what I thought,[speed=0.3] that's what I thought
+of course not!,of course not!
+[speed=0.3] I bet I'm smarter than you,[speed=0.3] I bet I'm smarter than you
 yeah!,yeah!
 woah you can talk?,woah you can talk?
 "if I was, you'd be fired","if I was, you'd be fired"
@@ -28,3 +44,32 @@ woah you can talk?,woah you can talk?
 okay fine,okay fine
 you're not my boss!,you're not my boss!
 okay!,okay!
+SPEED_0_5_WOAH_A_HUMAN_9ED224,[speed=0.5]woah a human
+SPEED_0_15_DON_T_LIE_TO_ME_38E15E,[speed=0.15]don't lie to me
+SPEED_0_3_I_KNOW_WHAT_A_HUMAN_AFB676,[speed=0.3]I know what a human is
+SPEED_0_3_THAT_S_RIGHT_7A35C4,[speed=0.3]that's right
+SPEED_0_3_ANYWAYS_I_WAS_ABOUT_6A6CD6,[speed=0.3]anyways I was about to go fishing
+SPEED_0_3_TILL_YOU_INTERRUPTE_4AD847,[speed=0.3]till you interrupted me.
+SPEED_0_3_YOU_SOUND_DUMB_E001FB,[speed=0.3]you sound dumb
+SPEED_0_3_ANYWAYS_TAP_THE_OCE_12376E,[speed=0.3]anyways tap the ocean to throw the hook
+SPEED_0_3_IT_S_TOO_HEAVY_FOR_9ACF3A,[speed=0.3]it's too heavy for me to throw it myself
+FISHING_SOUNDS_DUMB_25A312,fishing sounds dumb
+SPEED_0_3_YAY_WE_CAN_FISH_TOG_811DD6,"[speed=0.3]yay, we can fish together!"
+SPEED_0_3_TAP_THE_OCEAN_TO_TH_43EFC6,[speed=0.3]tap the ocean to throw the hook
+I_WANNA_GO_FISHING_TOO_896E3F,I wanna go fishing too!
+OK_FINE_I_M_HUMAN_A60563,ok fine I'm human
+SPEED_0_3_YOU_RE_ACTUALLY_A_L_38B05A,[speed=0.3]you're actually a liar
+SPEED_0_3_TILL_YOU_INTERRUPTE_7B9812,[speed=0.3]till you interrupted me
+I_M_A_CAT_MEOW_70F53F,I'm a cat. meow~
+I_M_NOT_A_HUMAN_5626B1,I'm not a human!
+SPEED_0_3_OF_COURSE_I_CAN_TAL_E6C8F7,[speed=0.3]of course I can talk![wait=0.3] you think I'm stupid?
+SPEED_0_3_THAT_S_WHAT_I_THOUG_14993D,[speed=0.3] that's what I thought
+OF_COURSE_NOT_71924C,of course not!
+SPEED_0_3_I_BET_I_M_SMARTER_T_636906,[speed=0.3]I bet I'm smarter than you
+YEAH_386F50,yeah!
+WOAH_YOU_CAN_TALK_AC7A88,woah you can talk?
+IF_I_WAS_YOU_D_BE_FIRED_347907,"[speed=0.3]if I was, you'd be fired"
+JUST_TAP_THE_OCEAN_OKAY_A0F6A0,"[speed=0.3]just tap the ocean, okay?"
+OKAY_FINE_B562FE,okay fine
+YOU_RE_NOT_MY_BOSS_6D2238,you're not my boss!
+OKAY_C7595F,okay!

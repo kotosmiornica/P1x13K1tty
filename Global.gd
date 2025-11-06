@@ -20,6 +20,7 @@ var cat_fishing_played: = false
 var unlocked_fishing_levels := 1
 var bleach_level: int = 1
 var active_buffs = {}
+var monster_caught
 
 
 

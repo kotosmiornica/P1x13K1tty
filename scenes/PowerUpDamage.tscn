@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlrbpgwb7ukkf"]
+
+[ext_resource type="Script" uid="uid://fe71r6a2dlkl" path="res://scripts/power_up.gd" id="1_c16jo"]
+[ext_resource type="Texture2D" uid="uid://d0mvvhslqi5n" path="res://images/toyknife.png" id="2_c16jo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vxdkk"]
+radius = 29.0
+height = 106.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_c16jo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 0.6150904
+scale = Vector2(2.4188194, 2.4188194)
+texture = ExtResource("2_c16jo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -5)
+rotation = -1.4263042
+scale = Vector2(1.0977123, 1.0977123)
+shape = SubResource("CapsuleShape2D_vxdkk")

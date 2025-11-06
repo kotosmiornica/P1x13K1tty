@@ -1,77 +1,77 @@
 ~ start
-Cat: [speed=0.5]woah a human
+Cat: [speed=0.5]woah a human [ID:SPEED_0_5_WOAH_A_HUMAN_9ED224]
 
-- I'm not a human!
-	Cat: [speed=0.15][wave amp=25 freq=5][/wave]Don't lie to me
-	Cat: [speed=0.3] I know what a human is
-	- ok fine I'm human
-		Cat: [speed=0.3] that's right
-		Cat: [speed=0.3] anyways I was about to go fishing
-		Cat: [speed=0.3] till you interrupted me.
-		- fishing sounds dumb
-			Cat: [speed=0.3] you sound dumb
-			Cat: [speed=0.3] anyways tap the ocean to throw the hook
-			Cat: [speed=0.3] it's too heavy for me to throw it myself
+- I'm not a human! [ID:I_M_NOT_A_HUMAN_5626B1]
+	Cat: [speed=0.15]don't lie to me [ID:SPEED_0_15_DON_T_LIE_TO_ME_38E15E]
+	Cat: [speed=0.3]I know what a human is [ID:SPEED_0_3_I_KNOW_WHAT_A_HUMAN_AFB676]
+	- ok fine I'm human [ID:OK_FINE_I_M_HUMAN_A60563]
+		Cat: [speed=0.3]that's right [ID:SPEED_0_3_THAT_S_RIGHT_7A35C4]
+		Cat: [speed=0.3]anyways I was about to go fishing [ID:SPEED_0_3_ANYWAYS_I_WAS_ABOUT_6A6CD6]
+		Cat: [speed=0.3]till you interrupted me. [ID:SPEED_0_3_TILL_YOU_INTERRUPTE_4AD847]
+		- fishing sounds dumb [ID:FISHING_SOUNDS_DUMB_25A312]
+			Cat: [speed=0.3]you sound dumb [ID:SPEED_0_3_YOU_SOUND_DUMB_E001FB]
+			Cat: [speed=0.3]anyways tap the ocean to throw the hook [ID:SPEED_0_3_ANYWAYS_TAP_THE_OCE_12376E]
+			Cat: [speed=0.3]it's too heavy for me to throw it myself [ID:SPEED_0_3_IT_S_TOO_HEAVY_FOR_9ACF3A]
 			=> fishing_convo
-		- I wanna go fishing too!
-			Cat: [speed=0.3] yay, we can fish together!
-			Cat: [speed=0.3] tap the ocean to throw the hook
+		- I wanna go fishing too! [ID:I_WANNA_GO_FISHING_TOO_896E3F]
+			Cat: [speed=0.3]yay, we can fish together! [ID:SPEED_0_3_YAY_WE_CAN_FISH_TOG_811DD6]
+			Cat: [speed=0.3]tap the ocean to throw the hook [ID:SPEED_0_3_TAP_THE_OCEAN_TO_TH_43EFC6]
 			=> fishing_convo2
-	- I'm a cat. meow
-		Cat: [speed=0.3] you're actually a liar
-		Cat: [speed=0.3] anyways I was about to go fishing
-		Cat: [speed=0.3] till you interrupted me
-		- fishing sounds dumb
-			Cat: [speed=0.3] you sound dumb
-			Cat: [speed=0.3] anyways tap the ocean to throw the hook
-			Cat: [speed=0.3] it's too heavy for me to throw it myself
+	- I'm a cat. meow~ [ID:I_M_A_CAT_MEOW_70F53F]
+		Cat: [speed=0.3]you're actually a liar [ID:SPEED_0_3_YOU_RE_ACTUALLY_A_L_38B05A]
+		Cat: [speed=0.3]anyways I was about to go fishing [ID:SPEED_0_3_ANYWAYS_I_WAS_ABOUT_6A6CD6]
+		Cat: [speed=0.3]till you interrupted me [ID:SPEED_0_3_TILL_YOU_INTERRUPTE_7B9812]
+		- fishing sounds dumb [ID:FISHING_SOUNDS_DUMB_25A312]
+			Cat: [speed=0.3]you sound dumb [ID:SPEED_0_3_YOU_SOUND_DUMB_E001FB]
+			Cat: [speed=0.3]anyways tap the ocean to throw the hook [ID:SPEED_0_3_ANYWAYS_TAP_THE_OCE_12376E]
+			Cat: [speed=0.3]it's too heavy for me to throw it myself [ID:SPEED_0_3_IT_S_TOO_HEAVY_FOR_9ACF3A]
 			=> fishing_convo
-		- I wanna go fishing too!
-			Cat: [speed=0.3] yay, we can fish together!
-			Cat: [speed=0.3] tap the ocean to throw the hook
+		- I wanna go fishing too! [ID:I_WANNA_GO_FISHING_TOO_896E3F]
+			Cat: [speed=0.3]yay, we can fish together! [ID:SPEED_0_3_YAY_WE_CAN_FISH_TOG_811DD6]
+			Cat: [speed=0.3]tap the ocean to throw the hook [ID:SPEED_0_3_TAP_THE_OCEAN_TO_TH_43EFC6]
 			=> fishing_convo2
 
-- woah you can talk?
-	Cat: [speed=0.3] of course I can talk![wait=0.3] you think I'm stupid?
-	- of course not!
-		Cat: [speed=0.3] that's what I thought
-		Cat: [speed=0.3] anyways I was about to go fishing
-		Cat: [speed=0.3] till you interrupted me
-		- fishing sounds dumb
-			Cat: [speed=0.3] you sound dumb
-			Cat: [speed=0.3] anyways tap the ocean to throw the hook
-			Cat: [speed=0.3] it's too heavy for me to throw it myself
+- woah you can talk? [ID:WOAH_YOU_CAN_TALK_AC7A88]
+	Cat: [speed=0.3]of course I can talk![wait=0.3] you think I'm stupid? [ID:SPEED_0_3_OF_COURSE_I_CAN_TAL_E6C8F7]
+	- of course not! [ID:OF_COURSE_NOT_71924C]
+		Cat: [speed=0.3] that's what I thought [ID:SPEED_0_3_THAT_S_WHAT_I_THOUG_14993D]
+		Cat: [speed=0.3]anyways I was about to go fishing [ID:SPEED_0_3_ANYWAYS_I_WAS_ABOUT_6A6CD6]
+		Cat: [speed=0.3]till you interrupted me [ID:SPEED_0_3_TILL_YOU_INTERRUPTE_7B9812]
+		- fishing sounds dumb [ID:FISHING_SOUNDS_DUMB_25A312]
+			Cat: [speed=0.3]you sound dumb [ID:SPEED_0_3_YOU_SOUND_DUMB_E001FB]
+			Cat: [speed=0.3]anyways tap the ocean to throw the hook [ID:SPEED_0_3_ANYWAYS_TAP_THE_OCE_12376E]
+			Cat: [speed=0.3]it's too heavy for me to throw it myself [ID:SPEED_0_3_IT_S_TOO_HEAVY_FOR_9ACF3A]
 			=> fishing_convo
-		- I wanna go fishing too!
-			Cat: [speed=0.3] yay, we can fish together!
-			Cat: [speed=0.3] tap the ocean to throw the hook
+		- I wanna go fishing too! [ID:I_WANNA_GO_FISHING_TOO_896E3F]
+			Cat: [speed=0.3]yay, we can fish together! [ID:SPEED_0_3_YAY_WE_CAN_FISH_TOG_811DD6]
+			Cat: [speed=0.3]tap the ocean to throw the hook [ID:SPEED_0_3_TAP_THE_OCEAN_TO_TH_43EFC6]
 			=> fishing_convo2
-	- yeah!
-		Cat: [speed=0.3] I bet I'm smarter than you
-		Cat: [speed=0.3] anyways I was about to go fishing
-		Cat: [speed=0.3] till you interrupted me
-		- fishing sounds dumb
-			Cat: [speed=0.3] you sound dumb
-			Cat: [speed=0.3] anyways tap the ocean to throw the hook
-			Cat: [speed=0.3] it's too heavy for me to throw it myself
+	- yeah! [ID:YEAH_386F50]
+		Cat: [speed=0.3]I bet I'm smarter than you [ID:SPEED_0_3_I_BET_I_M_SMARTER_T_636906]
+		Cat: [speed=0.3]anyways I was about to go fishing [ID:SPEED_0_3_ANYWAYS_I_WAS_ABOUT_6A6CD6]
+		Cat: [speed=0.3]till you interrupted me [ID:SPEED_0_3_TILL_YOU_INTERRUPTE_7B9812]
+		- fishing sounds dumb [ID:FISHING_SOUNDS_DUMB_25A312]
+			Cat: [speed=0.3]you sound dumb [ID:SPEED_0_3_YOU_SOUND_DUMB_E001FB]
+			Cat: [speed=0.3]anyways tap the ocean to throw the hook [ID:SPEED_0_3_ANYWAYS_TAP_THE_OCE_12376E]
+			Cat: [speed=0.3]it's too heavy for me to throw it myself [ID:SPEED_0_3_IT_S_TOO_HEAVY_FOR_9ACF3A]
 			=> fishing_convo
-		- I wanna go fishing too!
-			Cat: [speed=0.3] yay, we can fish together!
-			Cat: [speed=0.3] tap the ocean to throw the hook
+		- I wanna go fishing too! [ID:I_WANNA_GO_FISHING_TOO_896E3F]
+			Cat: [speed=0.3]yay, we can fish together! [ID:SPEED_0_3_YAY_WE_CAN_FISH_TOG_811DD6]
+			Cat: [speed=0.3]tap the ocean to throw the hook [ID:SPEED_0_3_TAP_THE_OCEAN_TO_TH_43EFC6]
 			=> fishing_convo2
 
 => END
 
 
 ~ fishing_convo
-- you're not my boss!
-	Cat: if I was, you'd be fired
-	Cat: just tap the ocean, okay?
-	- okay fine
+- you're not my boss! [ID:YOU_RE_NOT_MY_BOSS_6D2238]
+	Cat: [speed=0.3]if I was, you'd be fired [ID:IF_I_WAS_YOU_D_BE_FIRED_347907]
+	Cat: [speed=0.3]just tap the ocean, okay? [ID:JUST_TAP_THE_OCEAN_OKAY_A0F6A0]
+	- okay fine [ID:OKAY_FINE_B562FE]
 
 => END
 
 ~ fishing_convo2
-- okay!
+- okay! [ID:OKAY_C7595F]
 
 => END

@@ -11,6 +11,7 @@ func _ready():
 
 func _on_body_entered(body):
 	if body.name == "Brotat":
+		Global.monster_caught = true
 		collected.emit()
 		body.move_speed += boost_amount
 		queue_free()
