@@ -126,4 +126,5 @@ func _unhandled_input(event: InputEvent) -> void:
 		buttons[selected_index].grab_focus()
 	
 	elif event.is_action_pressed("ui_accept"):
+
 		buttons[selected_index].emit_signal()
