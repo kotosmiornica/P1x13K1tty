@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvih5v5arfivc"]
+
+[ext_resource type="Texture2D" uid="uid://21hn7spmlfxe" path="res://images/pawmouse.png" id="1_rg80o"]
+[ext_resource type="Script" uid="uid://dxg4aejt7hk1x" path="res://ArcadeMouse.gd" id="2_ivi8k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rg80o"]
+radius = 22.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rg80o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_rg80o")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("2_ivi8k")

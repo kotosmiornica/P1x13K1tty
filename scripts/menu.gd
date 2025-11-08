@@ -10,6 +10,9 @@ extends Control
 @export var coins_per_food: int = 11
 @export var coin_stagger: float = 0.05
 
+#create characterbody2d, can be controlled with separate movement axis like ijkl (diff from wasd, which is your character movement
+#this acts like a cursor, make gun point toward virtual cursor instead of mouse (ez pz, get virutal mouse global position)
+
 var food_counts := {}
 var food_scenes := {
 	"Leek": preload("res://scenes/Leek.tscn"),

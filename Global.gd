@@ -21,6 +21,7 @@ var unlocked_fishing_levels := 1
 var bleach_level: int = 1
 var active_buffs = {}
 var monster_caught
+var virtual_cursor_pos: Vector2 = Vector2.ZERO
 
 
 

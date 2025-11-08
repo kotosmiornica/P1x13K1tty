@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bkhag286w8414"]
+[gd_scene load_steps=6 format=3 uid="uid://bkhag286w8414"]
 
 [ext_resource type="Script" uid="uid://5ovyfih70ylx" path="res://scripts/shootyou.gd" id="1_0v2ix"]
 [ext_resource type="Texture2D" uid="uid://cpes41qvm30ho" path="res://images/bettergun.png" id="2_gfr5o"]
+[ext_resource type="PackedScene" uid="uid://cvih5v5arfivc" path="res://ArcadeMouse.tscn" id="3_0v2ix"]
 [ext_resource type="AudioStream" uid="uid://vuv3b1hhrp5e" path="res://SOUNDS/sounds/scifishoot.mp3" id="3_7222r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_oo0bh"]
@@ -11,6 +12,8 @@ radius = 75.83897
 audio_bus_name = &"Bullets"
 script = ExtResource("1_0v2ix")
 shoot_sound = ExtResource("3_7222r")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_0v2ix")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(-14.123313, -14.123313)
