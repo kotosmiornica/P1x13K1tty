@@ -24,6 +24,7 @@ var wave_locked: bool = false
 
 func _ready() -> void:
 	get_tree().paused = false
+	print(get_tree().get_node_count())
 	start_next_wave()
 
 
