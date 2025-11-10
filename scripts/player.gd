@@ -411,4 +411,5 @@ func take_damage(amount: float) -> void:
 
 
 func die() -> void:
-	get_tree().change_scene_to_file("res://scenes/YouDied2.tscn")
+	await get_tree().create_timer(0.5).time
+	get_tree().change_scene_to_file("res://scenes/YouDied.tscn")
