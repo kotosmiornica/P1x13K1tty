@@ -1102,7 +1102,7 @@ border_width_left = 8
 border_width_top = 8
 border_width_right = 8
 border_width_bottom = 8
-border_color = Color(1, 0.078431375, 0.6313726, 0.6901961)
+border_color = Color(0.9719532, 0, 0.15813139, 0.8117647)
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
@@ -1953,10 +1953,10 @@ bus = &"Sfx"
 
 [node name="FishButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 844.0
+offset_left = 867.3454
 offset_top = 956.0
-offset_right = 1442.0
-offset_bottom = 1085.0
+offset_right = 1447.999
+offset_bottom = 1068.2947
 scale = Vector2(1.0775006, 1.0775006)
 focus_neighbor_left = NodePath("../ShopButton")
 focus_neighbor_top = NodePath("../UnlockExtraGun")
