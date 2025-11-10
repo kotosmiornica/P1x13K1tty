@@ -1,0 +1,266 @@
+[gd_scene load_steps=12 format=3 uid="uid://c30vektqsolup"]
+
+[ext_resource type="Script" uid="uid://dv0gmhg663pls" path="res://you_died_2.gd" id="1_3h8k2"]
+[ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="2_vai82"]
+[ext_resource type="StyleBox" uid="uid://bf5lod7pf26wg" path="res://scenes/fonts/orange.tres" id="3_1net5"]
+[ext_resource type="StyleBox" uid="uid://8xyrm3wauh3k" path="res://scenes/menupress.tres" id="4_onuty"]
+[ext_resource type="StyleBox" uid="uid://cp4kb2w7q3l6k" path="res://scenes/menuhoverrr.tres" id="5_jkn1v"]
+[ext_resource type="AudioStream" uid="uid://bnda3v2s6m0k3" path="res://SOUNDS/sounds/menuclick.wav" id="6_fmlun"]
+[ext_resource type="AudioStream" uid="uid://b6ionpskgprpw" path="res://SOUNDS/music/dark-ambient-music-354475.mp3" id="7_7bcjc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afm78"]
+bg_color = Color(0.5231931, 0, 0.09417965, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.7714383, 0, 0.33835897, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_color = Color(0, 0, 0, 0.91764706)
+shadow_size = 16
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="Animation" id="Animation_js3hq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("text:theme_override_colors/font_outline_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.52679324, 8.5432083e-07, 2.8878452e-07, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("text:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.88877124, 0, 0.24145472, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("text:theme_override_colors/font_shadow_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.051970966, 0.05197096, 0.05197095, 0.61960787)]
+}
+
+[sub_resource type="Animation" id="Animation_j8nn3"]
+resource_name = "you_died"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("text:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.88877124, 0, 0.24145472, 1), Color(0.9999617, 0.23772773, 0.3407956, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("text:theme_override_colors/font_outline_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.32044965, 1.6544945e-07, 9.62615e-08, 1), Color(0.78754234, 2.695322e-06, 2.8878452e-07, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("text:theme_override_colors/font_shadow_color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.051970966, 0.05197096, 0.05197095, 0.61960787), Color(0.15127608, 0.15127608, 0.15127608, 0.61960787)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_70dcw"]
+_data = {
+&"RESET": SubResource("Animation_js3hq"),
+&"you_died": SubResource("Animation_j8nn3")
+}
+
+[node name="YouDied2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3h8k2")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = 24.0
+offset_right = -19.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_afm78")
+
+[node name="text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -463.0
+offset_top = 61.0
+offset_right = 463.0
+offset_bottom = 241.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.88877124, 0, 0.24145472, 1)
+theme_override_colors/font_shadow_color = Color(0.051970966, 0.05197096, 0.05197095, 0.61960787)
+theme_override_colors/font_outline_color = Color(0.52679324, 8.5432083e-07, 2.8878452e-07, 1)
+theme_override_constants/shadow_offset_x = 16
+theme_override_constants/shadow_offset_y = -10
+theme_override_constants/outline_size = 19
+theme_override_fonts/font = ExtResource("2_vai82")
+theme_override_font_sizes/font_size = 180
+text = "You died! :<"
+horizontal_alignment = 1
+
+[node name="text_score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -391.0
+offset_top = 28.0
+offset_right = 391.0
+offset_bottom = 164.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1, 1.0836767)
+theme_override_colors/font_color = Color(0.8773148, 0.0002682808, 0.00014699131, 1)
+theme_override_colors/font_shadow_color = Color(5.2101536e-06, 0.5267912, 3.85046e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 2.8878452e-07, 0.4820935, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = -8
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_vai82")
+theme_override_font_sizes/font_size = 105
+text = "Mobs killed:"
+horizontal_alignment = 1
+
+[node name="text_waves" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -541.0
+offset_top = 382.0
+offset_right = 542.0
+offset_bottom = 518.0
+grow_horizontal = 2
+scale = Vector2(1, 1.153405)
+theme_override_colors/font_color = Color(0.8773148, 0.0002682808, 0.00014699131, 1)
+theme_override_colors/font_shadow_color = Color(5.2101536e-06, 0.5267912, 3.85046e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 2.8878452e-07, 0.4820935, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = -8
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("2_vai82")
+theme_override_font_sizes/font_size = 105
+text = "Waves cleared:"
+horizontal_alignment = 1
+
+[node name="MainMenuButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 73.0
+offset_top = -236.0
+offset_right = 771.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
+theme_override_fonts/font = ExtResource("2_vai82")
+theme_override_font_sizes/font_size = 108
+theme_override_styles/normal = ExtResource("3_1net5")
+theme_override_styles/pressed = ExtResource("4_onuty")
+theme_override_styles/hover = ExtResource("5_jkn1v")
+text = "Main Menu"
+autowrap_mode = 3
+
+[node name="click" type="AudioStreamPlayer" parent="MainMenuButton"]
+stream = ExtResource("6_fmlun")
+pitch_scale = 0.61
+bus = &"Sfx"
+
+[node name="Retry" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -764.0
+offset_top = -236.0
+offset_right = -66.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+focus_mode = 0
+theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
+theme_override_fonts/font = ExtResource("2_vai82")
+theme_override_font_sizes/font_size = 108
+theme_override_styles/normal = ExtResource("3_1net5")
+theme_override_styles/pressed = ExtResource("4_onuty")
+theme_override_styles/hover = ExtResource("5_jkn1v")
+text = "Retry...?"
+autowrap_mode = 3
+
+[node name="click" type="AudioStreamPlayer" parent="Retry"]
+stream = ExtResource("6_fmlun")
+pitch_scale = 1.34
+bus = &"Sfx"
+
+[node name="SadAmbient" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_7bcjc")
+volume_db = 8.878
+bus = &"Music"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_70dcw")
+}
+autoplay = "you_died"
