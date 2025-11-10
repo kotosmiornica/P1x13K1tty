@@ -8,6 +8,8 @@ extends Node2D
 @export var base_speed = 170.0
 @export var max_speed = 250.0
 @export var hook_start_offset = 800
+@export var horizontal_speed = 500.0
+@export var horizontal_smooth := 0.8
 
 var fishing_active = true
 var spawn_timer = 0.0
@@ -30,13 +32,24 @@ func _process(delta):
 		hook_rise_speed = lerp(base_speed, max_speed, progress)
 		hook.position.y -= hook_rise_speed * delta
 		hook.position.y = max(hook.position.y, hook_end_y)
-		var mouse_x = get_viewport().get_mouse_position().x
-		var hook_speed = 2.5
-		hook.position.x = lerp(hook.position.x, mouse_x, hook_speed * delta)
+
+		var dir := 0
+		if Input.is_action_pressed("ui_right"):
+			dir += 1
+		if Input.is_action_pressed("ui_left"):
+			dir -= 1
+
+		var target_x = hook.position.x + dir * horizontal_speed * delta
+		hook.position.x = lerp(hook.position.x, target_x, horizontal_smooth)
+
+		hook.position.x = clamp(hook.position.x, hook_sprite.texture.get_size().x / 2,
+			get_viewport_rect().size.x - hook_sprite.texture.get_size().x / 2)
+
 		spawn_timer += delta
 		if spawn_timer >= spawn_interval:
 			spawn_food()
 			spawn_timer = 0.0
+
 	if hook.position.y <= hook_end_y:
 		fishing_active = false
 		hook.visible = false

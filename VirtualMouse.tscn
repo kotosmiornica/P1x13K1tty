@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckw02upbje8p3"]
+
+[ext_resource type="Texture2D" uid="uid://21hn7spmlfxe" path="res://images/pawmouse.png" id="1_aygy2"]
+[ext_resource type="Script" uid="uid://euc16u26yy3v" path="res://VirtualMouse.gd" id="1_xdga2"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_xdga2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.4447172, 1.4447172)
+texture = ExtResource("1_aygy2")

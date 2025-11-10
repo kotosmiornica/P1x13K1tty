@@ -1,4 +1,4 @@
-[gd_scene load_steps=216 format=3 uid="uid://cqcwtk4w1gpdv"]
+[gd_scene load_steps=212 format=3 uid="uid://cqcwtk4w1gpdv"]
 
 [ext_resource type="Script" uid="uid://d1wrmtooq2n67" path="res://scripts/menu.gd" id="1_jmdev"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="1_o0tnf"]
@@ -1096,14 +1096,22 @@ corner_detail = 20
 shadow_color = Color(0, 0, 0, 0.682353)
 shadow_offset = Vector2(10, 10)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqqfh"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22i10"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwo1h"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btpd2"]
+bg_color = Color(0.94509804, 0.74509805, 0.90588236, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(1, 0.078431375, 0.6313726, 0.6901961)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+corner_detail = 10
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
 
 [sub_resource type="Animation" id="Animation_6c8sk"]
 resource_name = "Fade"
@@ -1243,11 +1251,27 @@ shadow_color = Color(0, 0, 0, 1)
 shadow_size = 15
 shadow_offset = Vector2(2, 10)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btpd2"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ksyst"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22i10"]
+content_margin_left = 25.0
+content_margin_right = 20.0
+bg_color = Color(0.9254744, 0.6999318, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.98552567, 0.9594311, 0.9999998, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 10
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 15
+shadow_offset = Vector2(2, 10)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r54wa"]
 content_margin_left = 2.0
@@ -1317,8 +1341,27 @@ shadow_color = Color(0, 0, 0, 1)
 shadow_size = 15
 shadow_offset = Vector2(2, 10)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_27abv"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwo1h"]
+content_margin_left = 25.0
+content_margin_right = 20.0
+bg_color = Color(0.94490504, 0.74532217, 0.90461326, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8235294, 0.42745098, 1, 1)
+corner_radius_top_left = 90
+corner_radius_top_right = 90
+corner_radius_bottom_right = 90
+corner_radius_bottom_left = 90
+corner_detail = 10
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 15
+shadow_offset = Vector2(2, 10)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rehui"]
 bg_color = Color(0.9607843, 0.07058824, 0, 1)
@@ -1408,8 +1451,27 @@ shadow_color = Color(0, 0, 0, 1)
 shadow_size = 18
 shadow_offset = Vector2(2, 10)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_prgnb"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqqfh"]
+content_margin_left = 25.0
+content_margin_right = 20.0
+bg_color = Color(1, 0.5568539, 0.48828655, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.6871639, 0.1545268, 3.85046e-07, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 10
+expand_margin_left = 10.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+shadow_color = Color(0, 0, 0, 1)
+shadow_size = 15
+shadow_offset = Vector2(2, 10)
 
 [sub_resource type="Animation" id="Animation_r54wa"]
 resource_name = "Jump"
@@ -1490,9 +1552,6 @@ _data = {
 &"RESET": SubResource("Animation_uds2g"),
 &"Slide": SubResource("Animation_uwbky")
 }
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0d5s4"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="Animation" id="Animation_d5b0y"]
 length = 0.001
@@ -1856,7 +1915,7 @@ theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("14_uwbky")
 theme_override_styles/hover = ExtResource("15_r54wa")
-theme_override_styles/focus = SubResource("StyleBoxFlat_yqqfh")
+theme_override_styles/focus = ExtResource("15_r54wa")
 text = "Shop :3"
 script = ExtResource("6_4umqm")
 
@@ -1884,7 +1943,7 @@ theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("7_el213")
 theme_override_styles/hover = ExtResource("7_el213")
-theme_override_styles/focus = SubResource("StyleBoxFlat_22i10")
+theme_override_styles/focus = ExtResource("15_r54wa")
 text = "Wardrobe"
 script = ExtResource("16_i7htd")
 
@@ -1909,7 +1968,7 @@ theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("14_uwbky")
 theme_override_styles/hover = ExtResource("15_r54wa")
-theme_override_styles/focus = SubResource("StyleBoxFlat_gwo1h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_btpd2")
 text = "> Go fishing! <
 "
 flat = true
@@ -1968,7 +2027,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yt8fu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m74h7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_gut0v")
 theme_override_styles/disabled = ExtResource("19_760fv")
-theme_override_styles/focus = SubResource("StyleBoxFlat_btpd2")
+theme_override_styles/focus = ExtResource("15_r54wa")
 text = "Unlock level 3!
 Cost: 280 Coins"
 autowrap_mode = 3
@@ -2012,7 +2071,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yt8fu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_m74h7")
 theme_override_styles/hover = SubResource("StyleBoxFlat_gut0v")
 theme_override_styles/disabled = ExtResource("19_760fv")
-theme_override_styles/focus = SubResource("StyleBoxFlat_ksyst")
+theme_override_styles/focus = SubResource("StyleBoxFlat_22i10")
 text = "Unlock level 2!
 Cost: 155 Coins"
 autowrap_mode = 3
@@ -2048,7 +2107,6 @@ pivot_offset = Vector2(-672, 231)
 focus_neighbor_left = NodePath("../UnlockLevel2")
 focus_neighbor_right = NodePath("../WardrobeButton")
 focus_neighbor_bottom = NodePath("../FishButton")
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 0.1764706, 0.85882354, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
@@ -2056,7 +2114,7 @@ theme_override_font_sizes/font_size = 52
 theme_override_styles/normal = SubResource("StyleBoxFlat_r54wa")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uds2g")
 theme_override_styles/hover = SubResource("StyleBoxFlat_jvsdq")
-theme_override_styles/focus = SubResource("StyleBoxFlat_27abv")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gwo1h")
 autowrap_mode = 3
 script = ExtResource("23_8fhjo")
 
@@ -2100,7 +2158,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_rehui")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_uwbky")
 theme_override_styles/hover = SubResource("StyleBoxFlat_yvxia")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_nxcfj")
-theme_override_styles/focus = SubResource("StyleBoxFlat_prgnb")
+theme_override_styles/focus = SubResource("StyleBoxFlat_yqqfh")
 text = "Unlock auto-gun!
 <400coins>"
 autowrap_mode = 3
@@ -2166,7 +2224,7 @@ theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
 theme_override_styles/pressed = ExtResource("14_uwbky")
 theme_override_styles/hover = ExtResource("15_r54wa")
-theme_override_styles/focus = SubResource("StyleBoxFlat_0d5s4")
+theme_override_styles/focus = ExtResource("15_r54wa")
 text = "Fight! (endless)"
 autowrap_mode = 3
 script = ExtResource("2_5yleq")
