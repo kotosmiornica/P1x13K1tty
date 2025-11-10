@@ -7,6 +7,7 @@ func _ready() -> void:
 	$text_score.text = "Score: %d" % player_score
 	$text_waves.text = "Waves Survived: %d" % Global.waves_survived
 	$SadAmbient.play()
+	$Retry.grab_focus()
 
 
 func _on_main_menu_button_pressed() -> void:
