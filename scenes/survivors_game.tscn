@@ -39,7 +39,7 @@
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="37_wih21"]
 [ext_resource type="PackedScene" uid="uid://biyv6bkx73783" path="res://scenes/UpgradeMenu.tscn" id="38_d0lry"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q1qpi"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d0lry"]
 texture = ExtResource("2_q1qpi")
 0:0/0 = 0
 1:0/0 = 0
@@ -370,7 +370,7 @@ texture = ExtResource("2_q1qpi")
 14:15/0 = 0
 15:15/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_botwr"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dymio"]
 texture = ExtResource("3_p0pgc")
 0:0/0 = 0
 1:0/0 = 0
@@ -378,8 +378,8 @@ texture = ExtResource("3_p0pgc")
 1:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_p0pgc"]
-sources/0 = SubResource("TileSetAtlasSource_q1qpi")
-sources/1 = SubResource("TileSetAtlasSource_botwr")
+sources/0 = SubResource("TileSetAtlasSource_d0lry")
+sources/1 = SubResource("TileSetAtlasSource_dymio")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l26od"]
 bg_color = Color(0.152941, 0.168627, 0.188235, 1)

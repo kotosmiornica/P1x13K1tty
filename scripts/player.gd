@@ -412,4 +412,8 @@ func take_damage(amount: float) -> void:
 
 func die() -> void:
 	print("Player died")
+	print(get_parent().get_children())
+	await get_tree().create_timer(0.2).timeout
+	get_parent().get_node("RightWall").queue_free()
+	get_parent().get_node("LeftWall").queue_free()
 	get_tree().change_scene_to_file("res://scenes/YouDied.tscn")
