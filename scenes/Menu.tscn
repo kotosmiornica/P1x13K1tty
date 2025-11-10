@@ -1224,12 +1224,12 @@ shadow_offset = Vector2(2, 10)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gut0v"]
 content_margin_left = 25.0
 content_margin_right = 20.0
-bg_color = Color(0.9021341, 0.6003549, 1, 1)
+bg_color = Color(0.9601324, 0.84200484, 1, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
-border_color = Color(0.91090655, 0.37642613, 0.9999997, 1)
+border_color = Color(0.94081414, 0.592805, 1, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -1365,12 +1365,12 @@ shadow_offset = Vector2(2, 10)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yvxia"]
 content_margin_left = 25.0
 content_margin_right = 20.0
-bg_color = Color(1, 0.21459296, 0.14025933, 1)
+bg_color = Color(1, 0.60347587, 0.53790784, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
-border_color = Color(0.73891115, 0.16913682, 0, 1)
+border_color = Color(0.983406, 0.23872393, 0, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -1702,6 +1702,7 @@ animation = &"EmotionalWig"
 autoplay = "EmotionalWig"
 
 [node name="ClickArea" type="Area2D" parent="MakeYourPlayer"]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MakeYourPlayer/ClickArea"]
 visible = false
@@ -1750,9 +1751,9 @@ color = Color(0.37152225, 0.16354352, 0.67266333, 0.9137255)
 
 [node name="Label" type="Label" parent="ColorRect"]
 layout_mode = 0
-offset_left = 784.0
+offset_left = 627.0
 offset_top = 57.0
-offset_right = 967.0
+offset_right = 810.0
 offset_bottom = 119.0
 theme_override_colors/font_color = Color(0.69426936, 1, 0.6830813, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
@@ -1789,9 +1790,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 27.0
+offset_left = -130.0
 offset_top = -493.0
-offset_right = 330.0
+offset_right = 173.0
 offset_bottom = -397.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -1838,45 +1839,18 @@ theme_override_colors/font_color = Color(1, 0.7882353, 1, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 40
 
-[node name="Button" type="Button" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 444.0
-offset_top = -283.0
-offset_right = 889.0
-offset_bottom = -135.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 0.7727881, 0.91755927, 1)
-theme_override_fonts/font = ExtResource("1_o0tnf")
-theme_override_font_sizes/font_size = 70
-theme_override_styles/normal = ExtResource("7_el213")
-theme_override_styles/pressed = ExtResource("14_uwbky")
-theme_override_styles/hover = ExtResource("15_r54wa")
-text = "Fight!(endless)"
-autowrap_mode = 3
-script = ExtResource("2_5yleq")
-
-[node name="click" type="AudioStreamPlayer" parent="Button"]
-stream = ExtResource("11_rtd1e")
-bus = &"Sfx"
-
 [node name="ShopButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 403.0
+offset_left = 254.0
 offset_top = 25.0
-offset_right = 709.0
+offset_right = 560.0
 offset_bottom = 117.0
-focus_neighbor_left = NodePath("../FishUpgrades")
+focus_neighbor_left = NodePath("../Settings")
 focus_neighbor_top = NodePath("../FishButton")
 focus_neighbor_right = NodePath("../Fight")
 focus_neighbor_bottom = NodePath("../WardrobeButton")
 theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.1764706, 0.85882354, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
@@ -1893,9 +1867,9 @@ bus = &"Sfx"
 [node name="WardrobeButton" type="Button" parent="."]
 top_level = true
 layout_mode = 0
-offset_left = 418.00003
+offset_left = 266.0
 offset_top = 150.0
-offset_right = 733.0
+offset_right = 581.0
 offset_bottom = 229.0
 scale = Vector2(0.8830157, 0.8830157)
 focus_neighbor_left = NodePath("../Settings")
@@ -1904,6 +1878,7 @@ focus_neighbor_right = NodePath("../UnlockExtraGun")
 focus_neighbor_bottom = NodePath("../FishButton")
 theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.1764706, 0.85882354, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = ExtResource("7_el213")
@@ -1924,6 +1899,10 @@ offset_top = 956.0
 offset_right = 1442.0
 offset_bottom = 1085.0
 scale = Vector2(1.0775006, 1.0775006)
+focus_neighbor_left = NodePath("../ShopButton")
+focus_neighbor_top = NodePath("../UnlockExtraGun")
+focus_neighbor_right = NodePath("../UnlockLevel2")
+focus_neighbor_bottom = NodePath("../Fight")
 theme_override_colors/font_color = Color(0.6689031, 0.9386557, 0.99999994, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 70
@@ -2059,19 +2038,19 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -668.0
-offset_top = -490.0
+offset_top = -603.0
 offset_right = -462.0
-offset_bottom = -291.0
+offset_bottom = -404.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.6199614, 0.6199614)
 pivot_offset = Vector2(-672, 231)
 focus_neighbor_left = NodePath("../UnlockLevel2")
-focus_neighbor_top = NodePath("../FishUpgrades")
 focus_neighbor_right = NodePath("../WardrobeButton")
 focus_neighbor_bottom = NodePath("../FishButton")
 focus_mode = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.1764706, 0.85882354, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 52
 theme_override_styles/normal = SubResource("StyleBoxFlat_r54wa")
@@ -2103,7 +2082,7 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 197.0
+offset_left = 180.0
 offset_top = -371.0
 offset_right = 524.0
 offset_bottom = -233.0
@@ -2181,6 +2160,7 @@ focus_neighbor_top = NodePath("../FishButton")
 focus_neighbor_right = NodePath(".")
 focus_neighbor_bottom = NodePath("../UnlockLevel2")
 theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.1764706, 0.85882354, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = ExtResource("7_el213")
@@ -2259,6 +2239,7 @@ sprite_frames = SubResource("SpriteFrames_btpd2")
 animation = &"leek"
 
 [node name="FishUpgrades" type="Button" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 30.0
 offset_top = 28.0
@@ -2269,6 +2250,7 @@ focus_neighbor_top = NodePath("../FishButton")
 focus_neighbor_right = NodePath("../ShopButton")
 focus_neighbor_bottom = NodePath("../Settings")
 theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.1764706, 0.85882354, 1)
 theme_override_fonts/font = ExtResource("1_o0tnf")
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = ExtResource("7_el213")
@@ -2285,7 +2267,6 @@ offset_bottom = 8.0
 [connection signal="input_event" from="MakeYourPlayer/ClickArea" to="MakeYourPlayer" method="_on_ClickArea_input_event"]
 [connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]
 [connection signal="pressed" from="WardrobeButton" to="." method="_on_wardrobe_pressed"]
-[connection signal="pressed" from="FishButton" to="Button" method="_on_fish_button_pressed"]
 [connection signal="pressed" from="UnlockLevel3" to="." method="_on_unlock_level_3_pressed"]
 [connection signal="pressed" from="UnlockLevel2" to="." method="_on_unlock_fishing_level2_pressed"]
 [connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
