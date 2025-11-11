@@ -418,7 +418,7 @@ theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ejxin")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_d5voq")
 max_value = 1.0
 step = 0.01
-value = 0.9
+value = 0.99
 ticks_position = 1
 metadata/_edit_use_anchors_ = true
 
@@ -439,7 +439,7 @@ theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ejxin")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_d5voq")
 max_value = 1.0
 step = 0.01
-value = 0.5
+value = 0.6
 ticks_position = 1
 metadata/_edit_use_anchors_ = true
 
@@ -460,7 +460,7 @@ theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ejxin")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_d5voq")
 max_value = 1.0
 step = 0.01
-value = 0.65
+value = 0.7
 ticks_position = 1
 metadata/_edit_use_anchors_ = true
 
