@@ -39,6 +39,7 @@ func authenticate():
 	#score_list.items.get(0)
 
 func _ready():
+	$FishButton.grab_focus()
 	authenticate()
 	apply_equipped_hair()
 	coins_label.text = str(Global.coins)
