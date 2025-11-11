@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b0ivg4reyd48l"]
+[gd_scene load_steps=13 format=3 uid="uid://b0ivg4reyd48l"]
 
 [ext_resource type="Script" uid="uid://b1jflxxxyw67b" path="res://scripts/YouDied.gd" id="1_3akcy"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="1_txxux"]
@@ -22,6 +22,18 @@ corner_radius_bottom_left = 20
 shadow_color = Color(0, 0, 0, 0.91764706)
 shadow_size = 16
 shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j8nn3"]
+bg_color = Color(0.8862745, 0.4509804, 0.81960785, 0.6509804)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [sub_resource type="Animation" id="Animation_js3hq"]
 length = 0.001
@@ -211,13 +223,13 @@ offset_right = 771.0
 offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 0
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
 theme_override_fonts/font = ExtResource("1_txxux")
 theme_override_font_sizes/font_size = 108
 theme_override_styles/normal = ExtResource("3_fi02i")
 theme_override_styles/pressed = ExtResource("4_8keu4")
 theme_override_styles/hover = ExtResource("5_j8nn3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_j8nn3")
 text = "Main Menu"
 autowrap_mode = 3
 
@@ -239,13 +251,13 @@ offset_right = -66.0
 offset_bottom = -100.0
 grow_horizontal = 2
 grow_vertical = 0
-focus_mode = 0
 theme_override_colors/font_color = Color(1, 0.77254903, 0.91764706, 1)
 theme_override_fonts/font = ExtResource("1_txxux")
 theme_override_font_sizes/font_size = 108
 theme_override_styles/normal = ExtResource("3_fi02i")
 theme_override_styles/pressed = ExtResource("4_8keu4")
 theme_override_styles/hover = ExtResource("5_j8nn3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_j8nn3")
 text = "Retry...?"
 autowrap_mode = 3
 

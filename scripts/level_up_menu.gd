@@ -7,6 +7,8 @@ signal weapon_chosen(weapon_id)
 @onready var bleach_desc = $CanvasLayer/Panel/bleach3/des3
 
 func _ready():
+	$CanvasLayer/Panel/pizzacutter2.grab_focus()
+	
 	if Global.is_bleach_maxed():
 		_hide_bleach_option()
 	else:

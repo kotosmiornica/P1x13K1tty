@@ -1454,12 +1454,12 @@ shadow_offset = Vector2(2, 10)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqqfh"]
 content_margin_left = 25.0
 content_margin_right = 20.0
-bg_color = Color(1, 0.5568539, 0.48828655, 1)
+bg_color = Color(1, 0.3672783, 0.40469328, 1)
 border_width_left = 5
 border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
-border_color = Color(0.6871639, 0.1545268, 3.85046e-07, 1)
+border_color = Color(0.7176099, 0, 0.17878088, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -2200,6 +2200,7 @@ stream = ExtResource("11_rtd1e")
 bus = &"Sfx"
 
 [node name="Fight" type="Button" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

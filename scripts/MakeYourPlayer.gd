@@ -27,12 +27,14 @@ func _ready() -> void:
 		DialogueManager.show_dialogue_balloon(dialogue_resource, "start")
 		DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 	
+	
 
 
 
 func _on_dialogue_ended(resource: DialogueResource) -> void:
 	print("Cat finished talking:", resource)
 	play_meow()
+	get_parent().get_node("Fight").grab_focus()
 
 
 func _is_point_over_sprite(sprite, global_point: Vector2) -> bool:
