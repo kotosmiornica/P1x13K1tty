@@ -10,6 +10,7 @@ var can_fire := true
 
 func _physics_process(_delta: float) -> void:
 	var dir := Input.get_vector("cursor_left", "cursor_right", "cursor_up", "cursor_down")
+	print(dir)
 
 	if dir != Vector2.ZERO and can_fire:
 		rotation = dir.angle()
