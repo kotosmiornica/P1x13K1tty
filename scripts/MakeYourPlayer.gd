@@ -34,7 +34,7 @@ func _ready() -> void:
 func _on_dialogue_ended(resource: DialogueResource) -> void:
 	print("Cat finished talking:", resource)
 	play_meow()
-	get_parent().get_node("Fight").grab_focus()
+	get_parent().get_node("ShopButton").grab_focus()
 
 
 func _is_point_over_sprite(sprite, global_point: Vector2) -> bool:

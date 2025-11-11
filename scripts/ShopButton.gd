@@ -1,5 +1,7 @@
 extends Button
 
+
+
 func _ready():
 	print("Button ready")
 	pressed.connect(_on_pressed)
@@ -7,11 +9,13 @@ func _ready():
 
 func _on_pressed():
 	$click.play()
+
 	print("Button clicked!")
 
 	var anim = get_node("/root/Control/Shop/Anim")
 	if anim:
 		print("AnimationPlayer found!")
 		anim.play("TransIn")
+		get_parent().get_node("Close")
 	else:
 		print("Animation node not found!")

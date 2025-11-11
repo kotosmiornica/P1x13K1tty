@@ -13,7 +13,7 @@ collision_mask = 2
 script = ExtResource("1_scysm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0, 1, 0.6313726, 0.8980392)
+modulate = Color(5.7756904e-07, 0.9557865, 0.602608, 0.972549)
 z_index = 15
 position = Vector2(1, -25.059845)
 scale = Vector2(0.65923095, 0.45976242)

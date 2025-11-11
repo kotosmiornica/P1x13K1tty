@@ -81,7 +81,16 @@ shadow_size = 10
 shadow_offset = Vector2(0, 8)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfqfc"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+bg_color = Color(0, 0.007843138, 0.011764706, 0.85882354)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.6524097, 0.6586955, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jvxff"]
 bg_color = Color(0, 0.20633268, 0.4776796, 1)
@@ -185,6 +194,20 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(208, -1082), Vector2(208, 23)]
 }
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Menusettings/Closing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"grab_focus"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_jvxff"]
 resource_name = "FadeOut"
@@ -212,6 +235,20 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(208, 23), Vector2(208, 1167)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Settings")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.56666666),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"grab_focus"
+}]
 }
 
 [sub_resource type="Animation" id="Animation_d5voq"]
@@ -347,6 +384,7 @@ offset_top = 84.00002
 offset_right = 1652.0
 offset_bottom = 156.61542
 theme_override_colors/font_color = Color(0.76862746, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0.64613575, 0.68844265, 1)
 theme_override_colors/font_pressed_color = Color(0.66560405, 8.061901e-07, 4.3317675e-07, 1)
 theme_override_colors/font_hover_color = Color(0.9682372, 0.003346892, 0.0018343591, 1)
 theme_override_fonts/font = ExtResource("2_jvxff")
@@ -373,7 +411,7 @@ anchor_bottom = 0.001967011
 offset_left = -110.0
 offset_top = 227.00002
 offset_right = 391.2461
-offset_bottom = 277.0188
+offset_bottom = 277.01883
 scale = Vector2(1.5434911, 3.3873937)
 theme_override_styles/slider = SubResource("StyleBoxFlat_jvxff")
 theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ejxin")
@@ -466,7 +504,7 @@ text = "bullets"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Animations" type="AnimationPlayer" parent="."]
+[node name="Animations2" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_415nn")
 }

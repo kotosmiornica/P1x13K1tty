@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://be8tpxxc3acpp"]
+[gd_scene load_steps=14 format=3 uid="uid://be8tpxxc3acpp"]
 
 [ext_resource type="Script" uid="uid://ds5tgr03uxpb4" path="res://scripts/level_up_menu.gd" id="1_nt8lk"]
 [ext_resource type="StyleBox" uid="uid://ctnedtyf78d1o" path="res://scenes/fonts/basicblu.tres" id="2_yu4sn"]
@@ -52,6 +52,18 @@ corner_detail = 10
 shadow_color = Color(0, 0, 0, 1)
 shadow_size = 15
 shadow_offset = Vector2(0, 20)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vnbc4"]
+bg_color = Color(0.5384059, 0.8425926, 0.99999994, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 200
+corner_radius_top_right = 200
+corner_radius_bottom_right = 200
+corner_radius_bottom_left = 200
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_buj6g"]
 bg_color = Color(7.89344e-06, 0.653494, 0.876982, 1)
@@ -117,6 +129,7 @@ theme_override_colors/icon_focus_color = Color(0.7568665, 0.91396767, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_sogc5")
 theme_override_styles/pressed = ExtResource("3_sogc5")
 theme_override_styles/hover = ExtResource("2_yu4sn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vnbc4")
 script = ExtResource("8_pwcma")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/pizzacutter2"]
@@ -158,6 +171,7 @@ theme_override_colors/icon_focus_color = Color(0.7568665, 0.91396767, 1, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_buj6g")
 theme_override_styles/pressed = ExtResource("3_sogc5")
 theme_override_styles/hover = ExtResource("2_yu4sn")
+theme_override_styles/focus = SubResource("StyleBoxFlat_vnbc4")
 script = ExtResource("10_jqsxd")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel/bleach3"]

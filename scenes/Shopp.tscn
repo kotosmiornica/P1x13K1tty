@@ -1,4 +1,4 @@
-[gd_scene load_steps=132 format=3 uid="uid://58ityb3umon8"]
+[gd_scene load_steps=131 format=3 uid="uid://58ityb3umon8"]
 
 [ext_resource type="Script" uid="uid://de51rx2m8hibh" path="res://scripts/Shopp.gd" id="1_24207"]
 [ext_resource type="Texture2D" uid="uid://bkcljvg88hmay" path="res://images/sheets/UndHeartSheet.png" id="2_24207"]
@@ -9,6 +9,7 @@
 [ext_resource type="StyleBox" uid="uid://cup4cjocnji48" path="res://scenes/fonts/normalshop.tres" id="4_24207"]
 [ext_resource type="StyleBox" uid="uid://dtnyfsfgiwow0" path="res://scenes/fonts/hoverrightshop.tres" id="5_402gu"]
 [ext_resource type="Script" uid="uid://cq3lke7m2pmed" path="res://scripts/prev.gd" id="5_oahkd"]
+[ext_resource type="StyleBox" uid="uid://brokc8gjf3jia" path="res://scenes/FACUS.tres" id="6_cb6n5"]
 [ext_resource type="Script" uid="uid://dnf2d832xwwjo" path="res://scripts/close.gd" id="9_fqaxf"]
 [ext_resource type="Script" uid="uid://dktoxo7y7qynr" path="res://scripts/next.gd" id="10_nrrf8"]
 [ext_resource type="AudioStream" uid="uid://bnda3v2s6m0k3" path="res://SOUNDS/sounds/menuclick.wav" id="10_oahkd"]
@@ -815,12 +816,6 @@ shadow_color = Color(0, 0, 0, 0.65098)
 shadow_size = 7
 shadow_offset = Vector2(0, 8)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cb6n5"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ll2t5"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g78u"]
 bg_color = Color(0.0117647, 0.0117647, 0.0117647, 1)
 border_width_left = 6
@@ -869,7 +864,16 @@ shadow_size = 7
 shadow_offset = Vector2(0, 15)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wx4sd"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+bg_color = Color(0, 0, 0, 0.8)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.93367064, 0.77956325, 0.9999997, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsnv8"]
 content_margin_left = 15.0
@@ -925,7 +929,16 @@ shadow_size = 10
 shadow_offset = Vector2(0, 8)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ko483"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+bg_color = Color(0, 0.003921569, 0.003921569, 0.81960785)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0.79152757, 0.80276376, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="Shop" type="CanvasLayer"]
 process_mode = 3
@@ -1031,7 +1044,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_0wr65")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_sf2aa")
 theme_override_styles/hover = SubResource("StyleBoxFlat_iqtud")
-theme_override_styles/focus = SubResource("StyleBoxFlat_cb6n5")
+theme_override_styles/focus = ExtResource("6_cb6n5")
 text = "<"
 script = ExtResource("5_oahkd")
 metadata/_edit_use_anchors_ = true
@@ -1056,7 +1069,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("4_24207")
 theme_override_styles/pressed = ExtResource("3_ur338")
 theme_override_styles/hover = ExtResource("5_402gu")
-theme_override_styles/focus = SubResource("StyleBoxFlat_ll2t5")
+theme_override_styles/focus = ExtResource("6_cb6n5")
 text = ">
 "
 script = ExtResource("10_nrrf8")
@@ -1107,7 +1120,11 @@ offset_top = 84.00003
 offset_right = 1654.0
 offset_bottom = 181.38464
 focus_neighbor_left = NodePath("../Prev")
+focus_neighbor_bottom = NodePath("../Next")
+focus_next = NodePath("../Next")
+focus_previous = NodePath("../Prev")
 theme_override_colors/font_color = Color(0.76862746, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0.7048182, 0.7090936, 1)
 theme_override_colors/font_pressed_color = Color(0.66560405, 8.061901e-07, 4.3317675e-07, 1)
 theme_override_colors/font_hover_color = Color(0.9682372, 0.003346892, 0.0018343591, 1)
 theme_override_fonts/font = ExtResource("4_402gu")

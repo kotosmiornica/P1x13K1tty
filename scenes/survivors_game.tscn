@@ -1,4 +1,4 @@
-[gd_scene load_steps=256 format=4 uid="uid://dsl247xnk6knu"]
+[gd_scene load_steps=255 format=4 uid="uid://dsl247xnk6knu"]
 
 [ext_resource type="Script" uid="uid://crgvxr0vdaef6" path="res://scripts/survivors_game.gd" id="1_vt6sv"]
 [ext_resource type="PackedScene" uid="uid://dpi6hxo5ndgqr" path="res://scenes/player.tscn" id="2_mrt1k"]
@@ -37,7 +37,6 @@
 [ext_resource type="Texture2D" uid="uid://18f080mn1t8u" path="res://images/straight_tree.png" id="36_wih21"]
 [ext_resource type="Texture2D" uid="uid://dc1e0885m4mew" path="res://images/notstraight_tree.png" id="37_d0lry"]
 [ext_resource type="FontFile" uid="uid://dsq4oypst8yrs" path="res://Dusk Fonts/Dusk Font B3.ttf" id="37_wih21"]
-[ext_resource type="PackedScene" uid="uid://biyv6bkx73783" path="res://scenes/UpgradeMenu.tscn" id="38_d0lry"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d0lry"]
 texture = ExtResource("2_q1qpi")
@@ -2121,7 +2120,6 @@ wait_time = 0.3
 autostart = true
 
 [node name="Fade" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="Fade"]
 anchors_preset = 15
@@ -96976,9 +96974,6 @@ visible = false
 position = Vector2(962, -44616)
 rotation = 3.1415927
 shape = SubResource("WorldBoundaryShape2D_wih21")
-
-[node name="UpgradeMenu" parent="." instance=ExtResource("38_d0lry")]
-visible = false
 
 [connection signal="health_depleted" from="Brotat" to="." method="_on_brotat_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -13,7 +13,7 @@ extends Node2D
 
 var fishing_active = true
 var spawn_timer = 0.0
-var hook_rise_speed = 5.0
+var hook_rise_speed = 3.0
 var caught_foods := []
 
 func _ready():
@@ -35,9 +35,13 @@ func _process(delta):
 
 		var dir := 0
 		if Input.is_action_pressed("ui_right"):
-			dir += 1
+			dir += 2.2
+			
+			
+			
+			
 		if Input.is_action_pressed("ui_left"):
-			dir -= 1
+			dir -= 2
 
 		var target_x = hook.position.x + dir * horizontal_speed * delta
 		hook.position.x = lerp(hook.position.x, target_x, horizontal_smooth)
