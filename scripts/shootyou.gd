@@ -9,8 +9,16 @@ var bullet_scene = preload("res://scenes/testbullet.tscn")
 var can_fire := true
 
 func _physics_process(_delta: float) -> void:
-	var dir := Input.get_vector("cursor_left", "cursor_right", "cursor_up", "cursor_down")
-	print(dir)
+	var dir := Vector2.ZERO
+
+	if Input.is_action_pressed("cursor_right"):
+		dir.x += 1
+	if Input.is_action_pressed("cursor_left"):
+		dir.x -= 1
+	if Input.is_action_pressed("cursor_down"):
+		dir.y += 1
+	if Input.is_action_pressed("cursor_up"):
+		dir.y -= 1
 
 	if dir != Vector2.ZERO and can_fire:
 		rotation = dir.angle()
