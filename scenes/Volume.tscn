@@ -418,7 +418,7 @@ theme_override_styles/grabber_area = SubResource("StyleBoxFlat_ejxin")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_d5voq")
 max_value = 1.0
 step = 0.01
-value = 0.69
+value = 0.9
 ticks_position = 1
 metadata/_edit_use_anchors_ = true
 

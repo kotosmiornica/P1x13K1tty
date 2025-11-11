@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cwyddtn83ubaj"]
+[gd_scene load_steps=12 format=3 uid="uid://cwyddtn83ubaj"]
 
 [ext_resource type="Script" uid="uid://bjsl6ysnftgno" path="res://scripts/pause_menu.gd" id="1_myx47"]
 [ext_resource type="Shader" uid="uid://b2w8n2w26ciqr" path="res://scenes/pause_menu.gdshader" id="1_n87rw"]
@@ -6,28 +6,11 @@
 [ext_resource type="AudioStream" uid="uid://bnda3v2s6m0k3" path="res://SOUNDS/sounds/menuclick.wav" id="3_kukqi"]
 [ext_resource type="StyleBox" uid="uid://8xyrm3wauh3k" path="res://scenes/menupress.tres" id="4_v4r4p"]
 [ext_resource type="StyleBox" uid="uid://cp4kb2w7q3l6k" path="res://scenes/menuhoverrr.tres" id="5_1s2dm"]
+[ext_resource type="StyleBox" uid="uid://cr6v0i6xq4krs" path="res://scenes/focuspause.tres" id="6_1s2dm"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uahpa"]
 shader = ExtResource("1_n87rw")
 shader_parameter/lod = 0.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4r4p"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1s2dm"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88e76"]
-bg_color = Color(0.9453806, 0.74495876, 0.9052155, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.9999923, 0.27170375, 0.60865563, 1)
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
 
 [sub_resource type="Animation" id="Animation_5d2l8"]
 length = 0.001
@@ -129,7 +112,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("3_5d2l8")
 theme_override_styles/pressed = ExtResource("4_v4r4p")
 theme_override_styles/hover = ExtResource("5_1s2dm")
-theme_override_styles/focus = SubResource("StyleBoxFlat_v4r4p")
+theme_override_styles/focus = ExtResource("6_1s2dm")
 text = "Resume"
 
 [node name="click" type="AudioStreamPlayer" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer/Resume"]
@@ -142,7 +125,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("3_5d2l8")
 theme_override_styles/pressed = ExtResource("4_v4r4p")
 theme_override_styles/hover = ExtResource("5_1s2dm")
-theme_override_styles/focus = SubResource("StyleBoxFlat_1s2dm")
+theme_override_styles/focus = ExtResource("6_1s2dm")
 text = "Restart :("
 
 [node name="click" type="AudioStreamPlayer" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer/Restart"]
@@ -155,7 +138,7 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("3_5d2l8")
 theme_override_styles/pressed = ExtResource("4_v4r4p")
 theme_override_styles/hover = ExtResource("5_1s2dm")
-theme_override_styles/focus = SubResource("StyleBoxFlat_88e76")
+theme_override_styles/focus = ExtResource("6_1s2dm")
 text = "Main Menu"
 
 [node name="click" type="AudioStreamPlayer" parent="CanvasLayer/ColorRect/PanelContainer/VBoxContainer/MainMenu"]
