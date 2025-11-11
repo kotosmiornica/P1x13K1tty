@@ -11,13 +11,13 @@ var can_fire := true
 func _physics_process(_delta: float) -> void:
 	var dir := Vector2.ZERO
 
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("cursor_right"):
 		dir.x += 1
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("cursor_left"):
 		dir.x -= 1
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("cursor_down"):
 		dir.y += 1
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("cursor_up"):
 		dir.y -= 1
 
 	if dir != Vector2.ZERO and can_fire:
